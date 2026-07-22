@@ -16,3 +16,9 @@ TECHNICAL
 - Installable PWA
 - Offline shell caching
 - KJV Scripture excerpts
+
+
+CONTENT DATA
+- assets/data/verses.js: topic and book collections
+- assets/data/people.json: Bible people profiles
+- assets/data/testimonies.json: Old and New Testament testimony stories

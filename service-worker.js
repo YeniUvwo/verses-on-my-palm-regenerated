@@ -1,5 +1,5 @@
-const CACHE='vomp-v6';
-const ASSETS=['./','./index.html','./assets/css/style.css','./assets/data/verses.js','./assets/js/app.js','./manifest.webmanifest','./assets/icons/icon.svg'];
+const CACHE='vomp-v8';
+const ASSETS=['./','./index.html','./assets/css/style.css','./assets/data/verses.js','./assets/data/people.json','./assets/data/testimonies.json','./assets/js/app.js','./manifest.webmanifest','./assets/icons/icon.svg'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS))));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))));
 self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).then(res=>{const copy=res.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return res;}).catch(()=>caches.match('./index.html'))))});

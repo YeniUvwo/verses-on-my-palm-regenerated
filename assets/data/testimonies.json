@@ -1,0 +1,554 @@
+[
+  {
+    "key": "promise-isaac",
+    "title": "Sarah Received the Promised Child",
+    "testament": "Old Testament",
+    "copy": "After a long and humanly impossible wait, God fulfilled His word.",
+    "icon": "star",
+    "need": "Waiting for a child",
+    "whatGodDid": "The Lord visited Sarah exactly as He had promised and gave Abraham and Sarah their son Isaac.",
+    "outcome": "Sarah’s laughter of disbelief became the laughter of testimony.",
+    "verses": [
+      [
+        "Genesis 18:14",
+        "Is any thing too hard for the Lord?"
+      ],
+      [
+        "Genesis 21:1–2",
+        "And the Lord visited Sarah as he had said... and Sarah conceived."
+      ],
+      [
+        "Genesis 21:6",
+        "God hath made me to laugh."
+      ]
+    ]
+  },
+  {
+    "key": "hannah-samuel",
+    "title": "Hannah’s Prayer Was Answered",
+    "testament": "Old Testament",
+    "copy": "She poured out her soul, found peace, and later held Samuel.",
+    "icon": "prayer",
+    "need": "A child and relief from deep sorrow",
+    "whatGodDid": "God remembered Hannah and enabled her to conceive.",
+    "outcome": "She gave birth to Samuel and dedicated him to the Lord.",
+    "verses": [
+      [
+        "1 Samuel 1:15",
+        "I am a woman of a sorrowful spirit... but have poured out my soul before the Lord."
+      ],
+      [
+        "1 Samuel 1:20",
+        "Hannah conceived, and bare a son, and called his name Samuel."
+      ],
+      [
+        "1 Samuel 2:1",
+        "My heart rejoiceth in the Lord."
+      ]
+    ]
+  },
+  {
+    "key": "joseph-palace",
+    "title": "Joseph Went from Prison to Palace",
+    "testament": "Old Testament",
+    "copy": "God turned years of injustice into preservation and leadership.",
+    "icon": "steps",
+    "need": "Deliverance from false accusation and forgotten seasons",
+    "whatGodDid": "God gave Joseph wisdom to interpret Pharaoh’s dreams and favour to lead Egypt.",
+    "outcome": "Joseph became governor and later preserved his family during famine.",
+    "verses": [
+      [
+        "Genesis 41:14",
+        "Then Pharaoh sent and called Joseph, and they brought him hastily out of the dungeon."
+      ],
+      [
+        "Genesis 41:41",
+        "See, I have set thee over all the land of Egypt."
+      ],
+      [
+        "Genesis 50:20",
+        "God meant it unto good, to bring to pass... to save much people alive."
+      ]
+    ]
+  },
+  {
+    "key": "red-sea",
+    "title": "The Red Sea Opened",
+    "testament": "Old Testament",
+    "copy": "When Israel was trapped, God made a road through the sea.",
+    "icon": "waves",
+    "need": "Escape from an impossible situation",
+    "whatGodDid": "God divided the sea and led Israel across on dry ground.",
+    "outcome": "The pursuing Egyptian army was defeated and Israel feared and believed the Lord.",
+    "verses": [
+      [
+        "Exodus 14:13–14",
+        "Stand still, and see the salvation of the Lord... The Lord shall fight for you."
+      ],
+      [
+        "Exodus 14:21–22",
+        "The Lord caused the sea to go back... and the children of Israel went into the midst of the sea upon the dry ground."
+      ],
+      [
+        "Exodus 14:31",
+        "And the people feared the Lord, and believed the Lord."
+      ]
+    ]
+  },
+  {
+    "key": "jericho",
+    "title": "Jericho’s Walls Fell",
+    "testament": "Old Testament",
+    "copy": "Israel obeyed an unusual instruction and God brought down the stronghold.",
+    "icon": "shield",
+    "need": "Victory over a fortified obstacle",
+    "whatGodDid": "God gave Joshua a strategy built on obedience, worship, and His power.",
+    "outcome": "The wall fell flat and Israel entered the city.",
+    "verses": [
+      [
+        "Joshua 6:2",
+        "See, I have given into thine hand Jericho."
+      ],
+      [
+        "Joshua 6:20",
+        "The wall fell down flat, so that the people went up into the city."
+      ],
+      [
+        "Hebrews 11:30",
+        "By faith the walls of Jericho fell down."
+      ]
+    ]
+  },
+  {
+    "key": "ruth-restored",
+    "title": "Ruth’s Life Was Restored",
+    "testament": "Old Testament",
+    "copy": "Widowhood and displacement became provision, family and legacy.",
+    "icon": "heart",
+    "need": "A new beginning after loss",
+    "whatGodDid": "God led Ruth to Boaz, a kinsman-redeemer who treated her with honour.",
+    "outcome": "Ruth married Boaz, bore Obed, and entered the lineage of David and Jesus.",
+    "verses": [
+      [
+        "Ruth 2:12",
+        "A full reward be given thee of the Lord God of Israel, under whose wings thou art come to trust."
+      ],
+      [
+        "Ruth 4:13",
+        "The Lord gave her conception, and she bare a son."
+      ],
+      [
+        "Ruth 4:17",
+        "They called his name Obed: he is the father of Jesse, the father of David."
+      ]
+    ]
+  },
+  {
+    "key": "esther-deliverance",
+    "title": "Esther’s Courage Brought Deliverance",
+    "testament": "Old Testament",
+    "copy": "A hidden identity and royal position became tools for rescue.",
+    "icon": "crown",
+    "need": "Deliverance from a deadly plot",
+    "whatGodDid": "God used Esther’s courage, Mordecai’s warning, fasting, and providential timing.",
+    "outcome": "Haman’s scheme was overturned and the Jews received protection and joy.",
+    "verses": [
+      [
+        "Esther 4:14",
+        "Who knoweth whether thou art come to the kingdom for such a time as this?"
+      ],
+      [
+        "Esther 7:3",
+        "Let my life be given me at my petition, and my people at my request."
+      ],
+      [
+        "Esther 8:16",
+        "The Jews had light, and gladness, and joy, and honour."
+      ]
+    ]
+  },
+  {
+    "key": "job-restored",
+    "title": "Job Was Restored",
+    "testament": "Old Testament",
+    "copy": "After severe loss and honest wrestling, God restored him.",
+    "icon": "mountain",
+    "need": "Strength and restoration after overwhelming suffering",
+    "whatGodDid": "God revealed His greatness, received Job’s prayer, and turned his captivity.",
+    "outcome": "The Lord blessed Job’s latter end more than his beginning.",
+    "verses": [
+      [
+        "Job 19:25",
+        "For I know that my redeemer liveth."
+      ],
+      [
+        "Job 42:10",
+        "The Lord turned the captivity of Job... and gave Job twice as much as he had before."
+      ],
+      [
+        "Job 42:12",
+        "So the Lord blessed the latter end of Job more than his beginning."
+      ]
+    ]
+  },
+  {
+    "key": "elijah-fire",
+    "title": "God Answered Elijah by Fire",
+    "testament": "Old Testament",
+    "copy": "One prophet stood against idolatry and God revealed Himself.",
+    "icon": "flame",
+    "need": "A public demonstration of the true God",
+    "whatGodDid": "God answered Elijah’s prayer with fire that consumed the sacrifice.",
+    "outcome": "The people fell on their faces and confessed that the Lord is God.",
+    "verses": [
+      [
+        "1 Kings 18:37",
+        "Hear me, O Lord, hear me, that this people may know that thou art the Lord God."
+      ],
+      [
+        "1 Kings 18:38",
+        "Then the fire of the Lord fell."
+      ],
+      [
+        "1 Kings 18:39",
+        "The Lord, he is the God; the Lord, he is the God."
+      ]
+    ]
+  },
+  {
+    "key": "widow-oil",
+    "title": "The Widow’s Oil Multiplied",
+    "testament": "Old Testament",
+    "copy": "A small vessel of oil became enough to clear debt and sustain a family.",
+    "icon": "home",
+    "need": "Provision under crushing debt",
+    "whatGodDid": "God multiplied the widow’s remaining oil as she poured into borrowed vessels.",
+    "outcome": "She sold the oil, paid her debt, and lived on the rest.",
+    "verses": [
+      [
+        "2 Kings 4:2",
+        "Thine handmaid hath not any thing in the house, save a pot of oil."
+      ],
+      [
+        "2 Kings 4:6",
+        "And it came to pass, when the vessels were full, that she said unto her son, Bring me yet a vessel."
+      ],
+      [
+        "2 Kings 4:7",
+        "Pay thy debt, and live thou and thy children of the rest."
+      ]
+    ]
+  },
+  {
+    "key": "naaman-healed",
+    "title": "Naaman Was Healed",
+    "testament": "Old Testament",
+    "copy": "Humility and obedience brought cleansing from leprosy.",
+    "icon": "waves",
+    "need": "Healing from leprosy",
+    "whatGodDid": "God instructed Naaman through Elisha to wash seven times in Jordan.",
+    "outcome": "His flesh was restored and he confessed the God of Israel.",
+    "verses": [
+      [
+        "2 Kings 5:10",
+        "Go and wash in Jordan seven times, and thy flesh shall come again to thee."
+      ],
+      [
+        "2 Kings 5:14",
+        "And his flesh came again like unto the flesh of a little child, and he was clean."
+      ],
+      [
+        "2 Kings 5:15",
+        "Now I know that there is no God in all the earth, but in Israel."
+      ]
+    ]
+  },
+  {
+    "key": "three-hebrews",
+    "title": "The Three Hebrews Survived the Fire",
+    "testament": "Old Testament",
+    "copy": "They refused to bow, and God met them inside the furnace.",
+    "icon": "flame",
+    "need": "Deliverance under persecution",
+    "whatGodDid": "God preserved Shadrach, Meshach, and Abednego in the fiery furnace.",
+    "outcome": "They emerged unharmed and the king honoured their God.",
+    "verses": [
+      [
+        "Daniel 3:17–18",
+        "Our God whom we serve is able to deliver us... But if not... we will not serve thy gods."
+      ],
+      [
+        "Daniel 3:25",
+        "I see four men loose, walking in the midst of the fire, and they have no hurt."
+      ],
+      [
+        "Daniel 3:27",
+        "Nor was an hair of their head singed."
+      ]
+    ]
+  },
+  {
+    "key": "daniel-lions",
+    "title": "Daniel Survived the Lions’ Den",
+    "testament": "Old Testament",
+    "copy": "His prayer life remained steady and God shut the lions’ mouths.",
+    "icon": "shield",
+    "need": "Protection from a death sentence",
+    "whatGodDid": "God sent His angel and kept the lions from harming Daniel.",
+    "outcome": "Daniel was lifted out unharmed and the king proclaimed God’s greatness.",
+    "verses": [
+      [
+        "Daniel 6:10",
+        "He kneeled upon his knees three times a day, and prayed."
+      ],
+      [
+        "Daniel 6:22",
+        "My God hath sent his angel, and hath shut the lions' mouths."
+      ],
+      [
+        "Daniel 6:23",
+        "No manner of hurt was found upon him, because he believed in his God."
+      ]
+    ]
+  },
+  {
+    "key": "elizabeth-john",
+    "title": "Elizabeth Gave Birth to John",
+    "testament": "New Testament",
+    "copy": "A prayer remembered after many years became part of God’s redemption story.",
+    "icon": "heart",
+    "need": "A child after long barrenness",
+    "whatGodDid": "God heard Zacharias and Elizabeth and gave them John the Baptist.",
+    "outcome": "Their neighbours rejoiced, and John prepared the way for the Lord.",
+    "verses": [
+      [
+        "Luke 1:13",
+        "Thy prayer is heard; and thy wife Elisabeth shall bear thee a son."
+      ],
+      [
+        "Luke 1:25",
+        "Thus hath the Lord dealt with me... to take away my reproach."
+      ],
+      [
+        "Luke 1:57–58",
+        "Elisabeth... brought forth a son. And her neighbours... rejoiced with her."
+      ]
+    ]
+  },
+  {
+    "key": "virgin-birth",
+    "title": "Jesus Was Born of a Virgin",
+    "testament": "New Testament",
+    "copy": "God fulfilled prophecy and sent His Son into the world.",
+    "icon": "star",
+    "need": "Humanity’s salvation",
+    "whatGodDid": "The Holy Spirit overshadowed Mary and she conceived Jesus, the Son of God.",
+    "outcome": "The Saviour was born, and heaven announced peace and great joy.",
+    "verses": [
+      [
+        "Luke 1:35",
+        "The Holy Ghost shall come upon thee... therefore also that holy thing which shall be born of thee shall be called the Son of God."
+      ],
+      [
+        "Luke 2:10–11",
+        "I bring you good tidings of great joy... For unto you is born this day... a Saviour, which is Christ the Lord."
+      ],
+      [
+        "Matthew 1:23",
+        "Behold, a virgin shall be with child... and they shall call his name Emmanuel."
+      ]
+    ]
+  },
+  {
+    "key": "woman-healed",
+    "title": "The Woman with the Issue of Blood Was Healed",
+    "testament": "New Testament",
+    "copy": "Twelve years of suffering ended when she reached for Jesus.",
+    "icon": "heart",
+    "need": "Healing after prolonged suffering",
+    "whatGodDid": "Jesus responded to her faith and healed her immediately.",
+    "outcome": "She was made whole and sent away in peace.",
+    "verses": [
+      [
+        "Mark 5:28",
+        "If I may touch but his clothes, I shall be whole."
+      ],
+      [
+        "Mark 5:29",
+        "And straightway the fountain of her blood was dried up."
+      ],
+      [
+        "Mark 5:34",
+        "Daughter, thy faith hath made thee whole; go in peace."
+      ]
+    ]
+  },
+  {
+    "key": "bartimaeus-sight",
+    "title": "Blind Bartimaeus Received His Sight",
+    "testament": "New Testament",
+    "copy": "He refused to be silenced and Jesus stopped for him.",
+    "icon": "sun",
+    "need": "Mercy and restored sight",
+    "whatGodDid": "Jesus called Bartimaeus, asked what he wanted, and restored his sight.",
+    "outcome": "He immediately followed Jesus in the way.",
+    "verses": [
+      [
+        "Mark 10:48",
+        "He cried the more a great deal, Thou Son of David, have mercy on me."
+      ],
+      [
+        "Mark 10:49",
+        "And Jesus stood still."
+      ],
+      [
+        "Mark 10:52",
+        "Thy faith hath made thee whole. And immediately he received his sight."
+      ]
+    ]
+  },
+  {
+    "key": "lazarus-raised",
+    "title": "Lazarus Was Raised from the Dead",
+    "testament": "New Testament",
+    "copy": "Jesus arrived after four days and proved He is the resurrection and the life.",
+    "icon": "cross",
+    "need": "Hope in the face of death",
+    "whatGodDid": "Jesus called Lazarus out of the tomb.",
+    "outcome": "Lazarus came forth alive and many believed in Jesus.",
+    "verses": [
+      [
+        "John 11:25",
+        "I am the resurrection, and the life."
+      ],
+      [
+        "John 11:43",
+        "Lazarus, come forth."
+      ],
+      [
+        "John 11:44–45",
+        "And he that was dead came forth... Then many of the Jews... believed on him."
+      ]
+    ]
+  },
+  {
+    "key": "five-thousand",
+    "title": "Jesus Fed Five Thousand",
+    "testament": "New Testament",
+    "copy": "A small lunch became enough in the hands of Jesus.",
+    "icon": "home",
+    "need": "Food for a large hungry crowd",
+    "whatGodDid": "Jesus blessed five loaves and two fishes and multiplied them.",
+    "outcome": "Everyone ate and twelve baskets of fragments remained.",
+    "verses": [
+      [
+        "John 6:9",
+        "There is a lad here, which hath five barley loaves, and two small fishes."
+      ],
+      [
+        "John 6:11",
+        "Jesus took the loaves; and when he had given thanks, he distributed."
+      ],
+      [
+        "John 6:13",
+        "And filled twelve baskets with the fragments."
+      ]
+    ]
+  },
+  {
+    "key": "jairus-daughter",
+    "title": "Jairus’s Daughter Was Raised",
+    "testament": "New Testament",
+    "copy": "A delayed journey did not prevent Jesus from bringing life.",
+    "icon": "heart",
+    "need": "Healing for a dying child",
+    "whatGodDid": "Jesus went to Jairus’s home, took the girl by the hand, and commanded her to arise.",
+    "outcome": "Her spirit returned and she arose immediately.",
+    "verses": [
+      [
+        "Luke 8:50",
+        "Fear not: believe only, and she shall be made whole."
+      ],
+      [
+        "Luke 8:54",
+        "Maid, arise."
+      ],
+      [
+        "Luke 8:55",
+        "And her spirit came again, and she arose straightway."
+      ]
+    ]
+  },
+  {
+    "key": "peter-prison",
+    "title": "Peter Was Freed from Prison",
+    "testament": "New Testament",
+    "copy": "While the church prayed, an angel opened the prison doors.",
+    "icon": "anchor",
+    "need": "Deliverance from imprisonment and execution",
+    "whatGodDid": "God sent an angel who woke Peter, broke his chains, and led him outside.",
+    "outcome": "Peter returned to the praying believers and testified of his deliverance.",
+    "verses": [
+      [
+        "Acts 12:5",
+        "Peter therefore was kept in prison: but prayer was made without ceasing of the church unto God for him."
+      ],
+      [
+        "Acts 12:7",
+        "And his chains fell off from his hands."
+      ],
+      [
+        "Acts 12:11",
+        "Now I know of a surety, that the Lord hath sent his angel, and hath delivered me."
+      ]
+    ]
+  },
+  {
+    "key": "paul-silas",
+    "title": "Paul and Silas Were Freed at Midnight",
+    "testament": "New Testament",
+    "copy": "Prayer and praise filled a prison before an earthquake opened every door.",
+    "icon": "music",
+    "need": "Deliverance while suffering unjustly",
+    "whatGodDid": "God sent a great earthquake while Paul and Silas prayed and sang praises.",
+    "outcome": "The prison doors opened, chains loosened, and the jailer’s household believed.",
+    "verses": [
+      [
+        "Acts 16:25",
+        "At midnight Paul and Silas prayed, and sang praises unto God."
+      ],
+      [
+        "Acts 16:26",
+        "Immediately all the doors were opened, and every one's bands were loosed."
+      ],
+      [
+        "Acts 16:33–34",
+        "And was baptized, he and all his... believing in God with all his house."
+      ]
+    ]
+  },
+  {
+    "key": "saul-converted",
+    "title": "Saul Encountered Jesus",
+    "testament": "New Testament",
+    "copy": "A persecutor became a chosen witness of Christ.",
+    "icon": "spark",
+    "need": "Radical transformation and new direction",
+    "whatGodDid": "The risen Jesus confronted Saul, blinded him temporarily, and sent Ananias to him.",
+    "outcome": "Saul was baptised, filled with new purpose, and preached that Jesus is the Son of God.",
+    "verses": [
+      [
+        "Acts 9:4–5",
+        "Saul, Saul, why persecutest thou me?... I am Jesus whom thou persecutest."
+      ],
+      [
+        "Acts 9:17",
+        "Brother Saul, the Lord... hath sent me, that thou mightest receive thy sight, and be filled with the Holy Ghost."
+      ],
+      [
+        "Acts 9:20",
+        "And straightway he preached Christ in the synagogues, that he is the Son of God."
+      ]
+    ]
+  }
+]

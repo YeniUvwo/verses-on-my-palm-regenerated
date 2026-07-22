@@ -20,7 +20,10 @@ const readingEncouragements = {
   prayer: 'God is not waiting for impressive words. Begin honestly, and speak from your heart.',
   wisdom: 'You are allowed to pause before deciding. God gives wisdom to those who ask Him.',
   love: 'God’s love can soften what hurt has hardened. Let His love begin its work in you.',
-  gratitude: 'There is still goodness worth noticing. Let one small thank-you become worship.'
+  gratitude: 'There is still goodness worth noticing. Let one small thank-you become worship.',
+  healing: 'God sees every place that hurts. You can bring your body, mind and heart to Him with hope.',
+  grace: 'You do not have to earn what God freely gives. His grace is enough for this moment.',
+  mercy: 'God’s mercy meets you before shame can have the final word. Come to Him without hiding.'
 };
 
 const feelings = [
@@ -44,13 +47,14 @@ const browseGroups = [
   ['By Promise','promises','Hold on to what God has said.','shield'],
   ['By Prayer','prayers','Pray with words rooted in Scripture.','prayer'],
   ['By Person','people','Learn through lives in the Bible.','person'],
+  ['Great Testimonies','testimonies','See what God did in lives across both Testaments.','spark'],
   ['By Book','books','Discover defining verses from each book.','book'],
   ['By Occasion','occasions','Words for life’s important moments.','calendar'],
   ['Memory Collections','collections','Keep essential verses close.','star']
 ];
 
 const topics = [
-  ['Peace','peace'],['Anxiety','anxiety'],['Faith and doubt','doubt'],['God hears you','heard'],['Fear','fear'],['Hope','hope'],['Strength','strength'],['Wisdom','wisdom'],['Guidance','guidance'],['Forgiveness','forgiveness'],['Provision','provision'],['Identity in Christ','identity'],['Salvation','salvation'],['Prayer','prayer'],['Love','love'],['Gratitude','gratitude'],['Loneliness','lonely'],['Grief','grief'],['Rest','tired']
+  ['Peace','peace'],['Anxiety','anxiety'],['Faith and doubt','doubt'],['God hears you','heard'],['Fear','fear'],['Hope','hope'],['Strength','strength'],['Wisdom','wisdom'],['Guidance','guidance'],['Forgiveness','forgiveness'],['Provision','provision'],['Identity in Christ','identity'],['Salvation','salvation'],['Prayer','prayer'],['Healing','healing'],['Grace','grace'],['Mercy','mercy'],['Love','love'],['Gratitude','gratitude'],['Loneliness','lonely'],['Grief','grief'],['Rest','tired']
 ];
 
 const prayers = {
@@ -72,7 +76,10 @@ const prayers = {
   wisdom:'God, give me wisdom that is pure, peaceful and practical. Help me listen well, think clearly and choose what honours You. Amen.',
   love:'God, teach me to love with patience, truth and kindness. Heal selfishness in me and let Your love shape the way I treat others. Amen.',
   gratitude:'Thank You, Lord, for gifts I noticed and gifts I missed. Keep my heart awake to Your goodness and let gratitude become worship. Amen.',
-  peace:'Prince of Peace, settle my heart. Help me release control, receive Your presence and carry Your peace into the rest of this day. Amen.'
+  peace:'Prince of Peace, settle my heart. Help me release control, receive Your presence and carry Your peace into the rest of this day. Amen.',
+  healing:'Father, You see every part of me that needs healing. Touch my body, restore my mind and mend what is wounded in my heart. Give wisdom to those caring for me, strength for today and peace while I trust You. Amen.',
+  grace:'Gracious God, I cannot earn Your love or carry today by my own strength. Let Your grace meet me in my weakness, teach me to receive Your help and shape the way I live. Amen.',
+  mercy:'Merciful Father, I come to You honestly and without hiding. Thank You that Your compassion is greater than my failure. Forgive me, restore me and help me extend the mercy I have received. Amen.'
 };
 
 const newHere = [
@@ -88,6 +95,8 @@ const routes = {home:renderHome,encouragement:renderEncouragement,pray:renderPra
 const app=document.querySelector('#app');
 const saved=new Set(JSON.parse(localStorage.getItem('vomp-saved')||'[]'));
 let previousRoute='home';
+let biblePeople=[];
+let bibleTestimonies=[];
 
 function esc(v){return String(v).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
 function setRoute(route,param=''){previousRoute=currentRoute();location.hash=param?`${route}/${encodeURIComponent(param)}`:route;}
@@ -119,7 +128,12 @@ function icon(name='spark'){
     lamp:'<path d="M9 18h6M10 22h4M8 14c-1.3-1.1-2-2.7-2-4.5A6 6 0 0 1 18 9.5c0 1.8-.7 3.4-2 4.5-.8.7-1 1.4-1 2H9c0-.6-.2-1.3-1-2Z"/>',
     scroll:'<path d="M7 4h11a2 2 0 0 1 2 2v12H8a4 4 0 0 0-4 4V7a3 3 0 0 1 3-3Z"/><path d="M8 18a4 4 0 0 1 4 4H4"/>',
     joy:'<circle cx="12" cy="12" r="9"/><path d="M8 10h.01M16 10h.01M8 15c1.2 1.2 2.5 1.8 4 1.8s2.8-.6 4-1.8"/>',
-    steps:'<path d="M4 20h5v-5h5v-5h6"/>'
+    steps:'<path d="M4 20h5v-5h5v-5h6"/>',
+    globe:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9S14.5 18.5 12 21M12 3C9.5 5.5 8.2 8.5 8.2 12S9.5 18.5 12 21"/>',
+    flame:'<path d="M13 3s1 3-1 5c-1-2-3-2-3-2s-4 4-4 8a7 7 0 0 0 14 0c0-4-3-7-6-11Z"/><path d="M12 12c-1 1-2 2.2-2 3.5a2 2 0 0 0 4 0c0-1.3-1-2.5-2-3.5Z"/>',
+    crown:'<path d="m4 8 4 4 4-7 4 7 4-4-2 11H6L4 8Z"/><path d="M7 22h10"/>',
+    anchor:'<circle cx="12" cy="5" r="2"/><path d="M12 7v13M5 12H2c0 5 4 9 10 9s10-4 10-9h-3M8 12h8"/>',
+    clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'
   };
   return `<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">${paths[name]||paths.spark}</svg>`;
 }
@@ -130,7 +144,7 @@ function verseId(ref){return ref.toLowerCase().replace(/[^a-z0-9]+/g,'-')}
 function verseCards(list){return `<div class="verse-list">${list.map(([ref,text])=>{const id=verseId(ref);return `<article class="verse-card"><p class="verse-text">“${esc(text)}”</p><span class="verse-ref">${esc(ref)} · KJV</span><div class="verse-actions"><button class="small-button ${saved.has(id)?'saved':''}" data-save="${id}" data-ref="${esc(ref)}" data-text="${esc(text)}">${saved.has(id)?'♥ Saved':'♡ Save'}</button><button class="small-button" data-copy="${esc(text+' — '+ref)}">Copy</button></div></article>`}).join('')}</div>`}
 function prayerCard(key){return `<section class="section-block"><div class="section-title-row"><div><span class="eyebrow">Pray</span><h2>A prayer for this moment</h2></div></div><div class="prayer-card"><p>${esc(prayers[key]||prayers.prayer)}</p><small>God already knows your heart. Pray honestly and believe He hears you.</small></div></section>`}
 
-function renderHome(){app.innerHTML=`<section class="hero"><span class="eyebrow">God's Word for where you are</span><h1>What do you need today?</h1></section><section class="home-grid"><button class="door" data-route="encouragement"><span class="door-arrow" aria-hidden="true">${arrowIcon()}</span><span class="door-icon">${icon('heart')}</span><div><h2>I need encouragement</h2><p>Find Scripture for what you are feeling.</p></div></button><button class="door" data-route="pray"><span class="door-arrow" aria-hidden="true">${arrowIcon()}</span><span class="door-icon">${icon('prayer')}</span><div><h2>I want to pray</h2><p>Begin even when you do not know what to say.</p></div></button><button class="door" data-route="browse"><span class="door-arrow" aria-hidden="true">${arrowIcon()}</span><span class="door-icon">${icon('book')}</span><div><h2>Browse Scripture</h2><p>Explore by topic, promise, person and more.</p></div></button><button class="door" data-route="new"><span class="door-arrow" aria-hidden="true">${arrowIcon()}</span><span class="door-icon">${icon('spark')}</span><div><h2>I’m new here</h2><p>A simple place to begin with God and the Bible.</p></div></button><button class="door" data-route="search"><span class="door-arrow" aria-hidden="true">${arrowIcon()}</span><span class="door-icon">${icon('compass')}</span><div><h2>Search</h2><p>Use plain words: “I cannot sleep” or “God feels far.”</p></div></button></section><section class="feature-strip"><button class="feature-card" data-route="topic" data-param="doubt"><span class="feature-icon">${icon('question')}</span><span><strong>When you have doubts</strong><small>Your questions are not too much for God.</small></span><span class="feature-arrow arrow-button">${arrowIcon()}</span></button><button class="feature-card" data-route="topic" data-param="heard"><span class="feature-icon">${icon('prayer')}</span><span><strong>God hears you</strong><small>You do not need perfect words to be heard.</small></span><span class="feature-arrow arrow-button">${arrowIcon()}</span></button></section>`}
+function renderHome(){app.innerHTML=`<section class="hero"><span class="eyebrow">God's Word for where you are</span><h1>What do you need today?</h1><p>You do not need to know where to look. Begin with what is on your heart, and we will gently lead you into Scripture.</p></section><section class="home-grid"><button class="door" data-route="encouragement"><span class="door-arrow" aria-hidden="true">${arrowIcon()}</span><span class="door-icon">${icon('heart')}</span><div><h2>I need encouragement</h2><p>Find Scripture for what you are feeling.</p></div></button><button class="door" data-route="pray"><span class="door-arrow" aria-hidden="true">${arrowIcon()}</span><span class="door-icon">${icon('prayer')}</span><div><h2>I want to pray</h2><p>Begin even when you do not know what to say.</p></div></button><button class="door" data-route="browse"><span class="door-arrow" aria-hidden="true">${arrowIcon()}</span><span class="door-icon">${icon('book')}</span><div><h2>Browse Scripture</h2><p>Explore by topic, promise, person and more.</p></div></button><button class="door" data-route="new"><span class="door-arrow" aria-hidden="true">${arrowIcon()}</span><span class="door-icon">${icon('spark')}</span><div><h2>I’m new here</h2><p>A simple place to begin with God and the Bible.</p></div></button><button class="door" data-route="search"><span class="door-arrow" aria-hidden="true">${arrowIcon()}</span><span class="door-icon">${icon('compass')}</span><div><h2>Search</h2><p>Use plain words: “I cannot sleep” or “God feels far.”</p></div></button></section><section class="feature-strip"><button class="feature-card" data-route="topic" data-param="doubt"><span class="feature-icon">${icon('question')}</span><span><strong>When you have doubts</strong><small>Your questions are not too much for God.</small></span><span class="feature-arrow arrow-button">${arrowIcon()}</span></button><button class="feature-card" data-route="topic" data-param="heard"><span class="feature-icon">${icon('prayer')}</span><span><strong>God hears you</strong><small>You do not need perfect words to be heard.</small></span><span class="feature-arrow arrow-button">${arrowIcon()}</span></button></section>`}
 function renderEncouragement(){app.innerHTML=pageHead('How are you feeling?','Choose the closest word. You do not have to explain everything.','home')+`<div class="choice-grid">${feelings.map(([a,b,c,d])=>choiceCard(a,c,d,'topic',b)).join('')}</div>`}
 function renderPray(){app.innerHTML=pageHead('Let’s pray','Prayer can be honest, short and unfinished. God is not waiting for perfect words.','home')+`<div class="choice-grid">${choiceCard("I don’t know what to pray",'Begin with a simple guided prayer.','prayer','topic','heard')}${choiceCard('Pray about something','Choose what is on your heart.','heart','topics')}${choiceCard('Pray through Scripture','Let a Bible verse shape your words.','book','topic','prayer')}${choiceCard('When God feels silent','Bring doubt and waiting into the light.','question','topic','doubt')}${choiceCard('The Lord’s Prayer','Learn the pattern Jesus gave.','cross','reading','lords-prayer')}${choiceCard('Learn to pray','A gentle four-part guide.','steps','reading','learn-prayer')}</div>`}
 function renderBrowse(){app.innerHTML=pageHead('Browse Scripture','There is more here, but you will only see one clear choice at a time.','home')+`<div class="choice-grid">${browseGroups.map(([a,b,c,d])=>choiceCard(a,c,d,b)).join('')}</div>`}
@@ -161,8 +175,28 @@ function renderReading(){const key=getParam();if(key==='lords-prayer'){app.inner
 function renderCollectionList(title,copy,items){app.innerHTML=pageHead(title,copy,'browse')+`<div class="choice-grid">${items.map(item=>choiceCard(item.title,item.copy,item.icon,'collection',item.key)).join('')}</div>`}
 function renderCollection(){const item=scriptureCollections[getParam()];if(!item){renderBrowse();return}app.innerHTML=pageHead(item.title,item.copy,previousRoute==='collections'||previousRoute==='books'?'browse':previousRoute)+`<section class="section-block collection-intro"><div class="reading-card"><span class="symbol collection-icon">${icon(item.icon)}</span><p>${esc(item.copy)}</p></div></section><section class="section-block"><div class="section-title-row"><div><span class="eyebrow">Scripture</span><h2>Keep these words close</h2></div></div>${verseCards(item.verses)}</section>`}
 function renderGeneric(title,items,back='browse'){app.innerHTML=pageHead(title,'Choose a section to explore. Every card now opens content that matches its title.',back)+`<div class="choice-grid">${items.map(([a,b,iconName='book',key])=>choiceCard(a,b,iconName,scriptureCollections[key]?'collection':'topic',key)).join('')}</div>`}
+
+function renderPeople(){
+  app.innerHTML=pageHead('People in the Bible','Meet people who waited, prayed, failed, trusted, endured and saw God move.','browse')+`<div class="choice-grid">${biblePeople.map(item=>choiceCard(item.title,`${item.testament} · ${item.copy}`,item.icon,'person',item.key)).join('')}</div>`;
+}
+function renderPerson(){
+  const item=biblePeople.find(person=>person.key===getParam());
+  if(!item){renderPeople();return}
+  app.innerHTML=pageHead(item.title,item.copy,'people')+`<section class="section-block"><div class="reading-card"><span class="eyebrow">${esc(item.testament)}</span><h2>Their story</h2><p>${esc(item.story)}</p></div></section><section class="section-block"><div class="reading-card"><span class="eyebrow">What their life teaches</span><ul>${item.lessons.map(lesson=>`<li>${esc(lesson)}</li>`).join('')}</ul></div></section><section class="section-block"><div class="section-title-row"><div><span class="eyebrow">Key Scripture</span><h2>Read their testimony in the Bible</h2></div></div>${verseCards(item.verses)}</section>`;
+}
+function renderTestimonies(){
+  const oldItems=bibleTestimonies.filter(item=>item.testament==='Old Testament');
+  const newItems=bibleTestimonies.filter(item=>item.testament==='New Testament');
+  const cards=items=>`<div class="choice-grid">${items.map(item=>choiceCard(item.title,item.copy,item.icon,'testimony',item.key)).join('')}</div>`;
+  app.innerHTML=pageHead('Great Testimonies from the Bible','Stories of provision, healing, deliverance, restoration and impossible answers.','browse')+`<section class="section-block"><div class="section-title-row"><div><span class="eyebrow">Old Testament</span><h2>God made a way</h2></div></div>${cards(oldItems)}</section><section class="section-block"><div class="section-title-row"><div><span class="eyebrow">New Testament</span><h2>Jesus changed lives</h2></div></div>${cards(newItems)}</section>`;
+}
+function renderTestimony(){
+  const item=bibleTestimonies.find(testimony=>testimony.key===getParam());
+  if(!item){renderTestimonies();return}
+  app.innerHTML=pageHead(item.title,item.copy,'testimonies')+`<section class="section-block"><div class="reading-card"><span class="eyebrow">${esc(item.testament)}</span><h2>What they needed</h2><p>${esc(item.need)}</p></div></section><section class="section-block"><div class="reading-card"><span class="eyebrow">What God did</span><p>${esc(item.whatGodDid)}</p></div></section><section class="section-block"><div class="reading-card"><span class="eyebrow">The testimony</span><p>${esc(item.outcome)}</p></div></section><section class="section-block"><div class="section-title-row"><div><span class="eyebrow">Read it in Scripture</span><h2>The passages behind the testimony</h2></div></div>${verseCards(item.verses)}</section>`;
+}
 function renderSearch(){app.innerHTML=pageHead('Search','Type a feeling, need, Bible topic or a plain-language sentence.','home')+`<div class="search-wrap"><input id="searchInput" class="search-box" type="search" placeholder="Try “I feel afraid” or “Does God hear me?”" autocomplete="off"><p class="search-help">Search works on this device. Nothing you type is sent anywhere.</p><div id="results"></div></div>`;document.querySelector('#searchInput').addEventListener('input',e=>showResults(e.target.value));}
-function showResults(q){const box=document.querySelector('#results');q=q.trim().toLowerCase();if(!q){box.innerHTML='';return}const aliases={scared:'fear',afraid:'fear',worried:'anxiety',anxious:'anxiety','cannot sleep':'peace','can\'t sleep':'peace',listen:'heard',hear:'heard','need help':'heard','i need help':'heard','help me':'heard','please help me':'heard','i need prayer':'prayer','i need god':'salvation','i do not know what to do':'guidance',"i don't know what to do":'guidance',silent:'doubt',question:'doubt',unbelief:'doubt',alone:'lonely',sad:'grief',money:'provision',business:'wisdom',work:'wisdom',lost:'guidance',shame:'forgiveness'};let keys=Object.keys(verses).filter(k=>k.includes(q)||topics.some(([t,key])=>key===k&&t.toLowerCase().includes(q)));Object.entries(aliases).forEach(([term,key])=>{if(q.includes(term)&&!keys.includes(key))keys.push(key)});if(!keys.length){box.innerHTML='<div class="empty-state">I could not find an exact match, but you do not have to leave empty-handed. Start with God Hears You, prayer, peace or guidance.</div>';return}box.innerHTML=keys.slice(0,6).map(k=>`<section class="result-group"><h3>${esc(topics.find(x=>x[1]===k)?.[0]||k)}</h3>${verseCards(verses[k].slice(0,2))}<button class="small-button open-section-button" data-route="topic" data-param="${k}"><span>Open full section</span><span class="inline-arrow arrow-button" aria-hidden="true">${arrowIcon()}</span></button></section>`).join('');}
+function showResults(q){const box=document.querySelector('#results');q=q.trim().toLowerCase();if(!q){box.innerHTML='';return}const aliases={scared:'fear',afraid:'fear',worried:'anxiety',anxious:'anxiety','cannot sleep':'peace','can\'t sleep':'peace',listen:'heard',hear:'heard','need help':'heard','i need help':'heard','help me':'heard','please help me':'heard','i need prayer':'prayer','i need god':'salvation','i do not know what to do':'guidance',"i don't know what to do":'guidance',silent:'doubt',question:'doubt',unbelief:'doubt',alone:'lonely',sad:'grief',sick:'healing',ill:'healing',healing:'healing',pain:'healing','need healing':'healing',grace:'grace','need grace':'grace',mercy:'mercy','have mercy':'mercy','need mercy':'mercy',money:'provision',business:'wisdom',work:'wisdom',lost:'guidance',shame:'forgiveness'};let keys=Object.keys(verses).filter(k=>k.includes(q)||topics.some(([t,key])=>key===k&&t.toLowerCase().includes(q)));Object.entries(aliases).forEach(([term,key])=>{if(q.includes(term)&&!keys.includes(key))keys.push(key)});if(!keys.length){box.innerHTML='<div class="empty-state">I could not find an exact match, but you do not have to leave empty-handed. Start with God Hears You, prayer, peace or guidance.</div>';return}box.innerHTML=keys.slice(0,6).map(k=>`<section class="result-group"><h3>${esc(topics.find(x=>x[1]===k)?.[0]||k)}</h3>${verseCards(verses[k].slice(0,2))}<button class="small-button open-section-button" data-route="topic" data-param="${k}"><span>Open full section</span><span class="inline-arrow arrow-button" aria-hidden="true">${arrowIcon()}</span></button></section>`).join('');}
 function renderSaved(){const stored=JSON.parse(localStorage.getItem('vomp-saved-data')||'{}');const list=Object.entries(stored).map(([,v])=>[v.ref,v.text]);app.innerHTML=pageHead('Saved','Your saved verses remain on this device.','home')+(list.length?verseCards(list):'<div class="empty-state">You have not saved a verse yet. Tap ♡ Save beneath any Scripture to keep it here.</div>')}
 function renderSettings(){app.innerHTML=pageHead('Reading settings','Make the experience comfortable for your eyes and attention.','home')+`<div class="settings-list"><div class="setting-row"><div><strong>Appearance</strong><br><small>Light or dark reading mode</small></div><button id="themeToggle">${document.body.classList.contains('dark')?'Use light':'Use dark'}</button></div><div class="setting-row"><div><strong>Text size</strong><br><small>Adjust Scripture and body text</small></div><select id="fontSize"><option value="16">Smaller</option><option value="17">Default</option><option value="19">Larger</option><option value="21">Largest</option></select></div><div class="setting-row"><div><strong>Saved content</strong><br><small>Stored only in this browser</small></div><button id="clearSaved">Clear saved</button></div></div>`;document.querySelector('#fontSize').value=localStorage.getItem('vomp-font')||'17';document.querySelector('#themeToggle').onclick=()=>{document.body.classList.toggle('dark');localStorage.setItem('vomp-theme',document.body.classList.contains('dark')?'dark':'light');renderSettings()};document.querySelector('#fontSize').onchange=e=>{document.documentElement.style.setProperty('--font-size',e.target.value+'px');localStorage.setItem('vomp-font',e.target.value)};document.querySelector('#clearSaved').onclick=()=>{saved.clear();localStorage.removeItem('vomp-saved');localStorage.removeItem('vomp-saved-data');toast('Saved verses cleared')};}
 
@@ -174,6 +208,8 @@ function route(){
   else if(r==='topics')renderTopics();
   else if(r==='reading')renderReading();
   else if(r==='collection')renderCollection();
+  else if(r==='person')renderPerson();
+  else if(r==='testimony')renderTestimony();
   else if(r==='feelings')renderEncouragement();
   else if(r==='promises')renderGeneric('Promises of God',[
     ['God’s presence','Verses that promise He will not leave you.','shield','difficult-days'],
@@ -189,19 +225,23 @@ function route(){
     ['Prayers for difficult days','Scripture to pray when strength is low.','shield','difficult-days'],
     ['Prayer and God’s response','Verses about asking, listening and trusting.','prayer','prayer']
   ]);
-  else if(r==='people')renderGeneric('People in the Bible',[
-    ['Jesus','His supremacy, power, words and saving work.','cross','book-john'],
-    ['David','Psalms of worship, courage, repentance and trust.','music','book-psalms'],
-    ['Paul','Grace, faith and new life through his letter to Rome.','scroll','book-romans'],
-    ['James','Practical faith taught by the brother of Jesus.','steps','book-james']
-  ]);
+  else if(r==='people')renderPeople();
+  else if(r==='testimonies')renderTestimonies();
   else if(r==='books')renderCollectionList('Books of the Bible','Each card contains defining verses from that book only.',[
-    {title:'John',copy:'Meet Jesus—His power, identity and supremacy.',icon:'cross',key:'book-john'},
+    {title:'Genesis',copy:'Creation, covenant, faith and God’s faithfulness.',icon:'globe',key:'book-genesis'},
     {title:'Psalms',copy:'Prayer, worship and honest words for every emotion.',icon:'music',key:'book-psalms'},
     {title:'Proverbs',copy:'Wisdom for character, speech, work and relationships.',icon:'lamp',key:'book-proverbs'},
+    {title:'Isaiah',copy:'God’s holiness, comfort, salvation and the promised Messiah.',icon:'sun',key:'book-isaiah'},
+    {title:'Matthew',copy:'The King, His kingdom and His teaching.',icon:'cross',key:'book-matthew'},
+    {title:'Luke',copy:'The compassion, salvation and humanity of Jesus.',icon:'heart',key:'book-luke'},
+    {title:'John',copy:'Meet Jesus—His power, identity and supremacy.',icon:'cross',key:'book-john'},
+    {title:'Acts',copy:'The Holy Spirit, the early church and bold witness.',icon:'flame',key:'book-acts'},
     {title:'Romans',copy:'Grace, justification by faith and new life in Christ.',icon:'scroll',key:'book-romans'},
+    {title:'Ephesians',copy:'Grace, identity, unity and spiritual strength.',icon:'shield',key:'book-ephesians'},
     {title:'Philippians',copy:'Joy, peace, humility and contentment in Christ.',icon:'joy',key:'book-philippians'},
-    {title:'James',copy:'Practical, obedient and enduring faith.',icon:'steps',key:'book-james'}
+    {title:'Colossians',copy:'The supremacy of Christ and life rooted in Him.',icon:'crown',key:'book-colossians'},
+    {title:'James',copy:'Practical, obedient and enduring faith.',icon:'steps',key:'book-james'},
+    {title:'1 Peter',copy:'Hope, holiness and steadfast faith through suffering.',icon:'anchor',key:'book-1-peter'}
   ]);
   else if(r==='occasions')renderGeneric('Scripture for Occasions',[
     ['Starting a business','Wisdom, diligence and integrity from Proverbs.','lamp','book-proverbs'],
@@ -209,7 +249,8 @@ function route(){
     ['Exams','Wisdom, peace and strength for focused work.','lamp','wisdom'],
     ['Travel','God’s presence and guidance for the journey.','compass','guidance'],
     ['New year','Hope and courage for a fresh beginning.','sun','hope'],
-    ['Hospital visit','Comfort, strength and God’s nearness.','shield','difficult-days']
+    ['Hospital visit','Comfort, strength and God’s nearness.','shield','difficult-days'],
+    ['Waiting','Trust God when the answer or breakthrough has not come yet.','clock','occasion-waiting']
   ]);
   else if(r==='collections')renderCollectionList('Memory Verse Collections','Every collection contains exactly what its title promises.',[
     {title:'Essential Memory Verses',copy:'Foundational verses every believer can keep close.',icon:'star',key:'essential-verses'},
@@ -229,4 +270,19 @@ function toast(msg){const t=document.querySelector('#toast');t.textContent=msg;t
 window.addEventListener('hashchange',route);
 if(localStorage.getItem('vomp-theme')==='dark')document.body.classList.add('dark');document.documentElement.style.setProperty('--font-size',(localStorage.getItem('vomp-font')||'17')+'px');
 if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js'));
-route();
+async function initializeApp(){
+  try{
+    const [peopleResponse,testimoniesResponse]=await Promise.all([
+      fetch('./assets/data/people.json'),
+      fetch('./assets/data/testimonies.json')
+    ]);
+    if(!peopleResponse.ok||!testimoniesResponse.ok)throw new Error('Bible library data could not be loaded.');
+    [biblePeople,bibleTestimonies]=await Promise.all([peopleResponse.json(),testimoniesResponse.json()]);
+  }catch(error){
+    console.error(error);
+    biblePeople=[];
+    bibleTestimonies=[];
+  }
+  route();
+}
+initializeApp();

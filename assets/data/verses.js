@@ -138,6 +138,42 @@ const verses = {
     ["Ephesians 1:3", "Who hath blessed us with all spiritual blessings in heavenly places in Christ."],
     ["John 1:12", "But as many as received him, to them gave he power to become the sons of God."]
   ],
+  "healing": [
+    ["Psalm 103:2–3", "Bless the Lord, O my soul, and forget not all his benefits: Who forgiveth all thine iniquities; who healeth all thy diseases."],
+    ["Psalm 147:3", "He healeth the broken in heart, and bindeth up their wounds."],
+    ["Jeremiah 17:14", "Heal me, O Lord, and I shall be healed; save me, and I shall be saved: for thou art my praise."],
+    ["Jeremiah 30:17", "For I will restore health unto thee, and I will heal thee of thy wounds, saith the Lord."],
+    ["Isaiah 53:5", "But he was wounded for our transgressions, he was bruised for our iniquities: the chastisement of our peace was upon him; and with his stripes we are healed."],
+    ["Exodus 15:26", "For I am the Lord that healeth thee."],
+    ["Mark 5:34", "Daughter, thy faith hath made thee whole; go in peace, and be whole of thy plague."],
+    ["James 5:15", "And the prayer of faith shall save the sick, and the Lord shall raise him up."],
+    ["3 John 1:2", "Beloved, I wish above all things that thou mayest prosper and be in health, even as thy soul prospereth."],
+    ["Revelation 21:4", "And God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain."]
+  ],
+  "grace": [
+    ["2 Corinthians 12:9", "My grace is sufficient for thee: for my strength is made perfect in weakness."],
+    ["Ephesians 2:8–9", "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God."],
+    ["Hebrews 4:16", "Let us therefore come boldly unto the throne of grace, that we may obtain mercy, and find grace to help in time of need."],
+    ["John 1:16", "And of his fulness have all we received, and grace for grace."],
+    ["Romans 3:24", "Being justified freely by his grace through the redemption that is in Christ Jesus."],
+    ["Titus 2:11", "For the grace of God that bringeth salvation hath appeared to all men."],
+    ["1 Peter 5:10", "But the God of all grace, who hath called us unto his eternal glory by Christ Jesus... make you perfect, stablish, strengthen, settle you."],
+    ["2 Timothy 2:1", "Thou therefore, my son, be strong in the grace that is in Christ Jesus."],
+    ["James 4:6", "But he giveth more grace."],
+    ["Romans 5:20", "But where sin abounded, grace did much more abound."]
+  ],
+  "mercy": [
+    ["Lamentations 3:22–23", "It is of the Lord’s mercies that we are not consumed, because his compassions fail not. They are new every morning."],
+    ["Psalm 103:8", "The Lord is merciful and gracious, slow to anger, and plenteous in mercy."],
+    ["Micah 7:18", "Who is a God like unto thee, that pardoneth iniquity... because he delighteth in mercy?"],
+    ["Hebrews 4:16", "Let us therefore come boldly unto the throne of grace, that we may obtain mercy, and find grace to help in time of need."],
+    ["Ephesians 2:4–5", "But God, who is rich in mercy, for his great love wherewith he loved us... hath quickened us together with Christ."],
+    ["Titus 3:5", "Not by works of righteousness which we have done, but according to his mercy he saved us."],
+    ["Psalm 86:5", "For thou, Lord, art good, and ready to forgive; and plenteous in mercy unto all them that call upon thee."],
+    ["Luke 6:36", "Be ye therefore merciful, as your Father also is merciful."],
+    ["Psalm 51:1", "Have mercy upon me, O God, according to thy lovingkindness."],
+    ["Jude 1:21", "Keep yourselves in the love of God, looking for the mercy of our Lord Jesus Christ unto eternal life."]
+  ],
   "salvation": [
     ["John 3:16", "For God so loved the world, that he gave his only begotten Son."],
     ["Romans 10:9", "If thou shalt confess with thy mouth the Lord Jesus, and shalt believe in thine heart that God hath raised him from the dead, thou shalt be saved."],
@@ -313,6 +349,260 @@ const scriptureCollections = {
       ["James 4:8", "Draw nigh to God, and he will draw nigh to you."],
       ["James 4:10", "Humble yourselves in the sight of the Lord, and he shall lift you up."],
       ["James 5:16", "The effectual fervent prayer of a righteous man availeth much."]
+    ]
+  },
+
+  "book-genesis": {
+    title: "Genesis",
+    copy: "Creation, covenant, faith and God’s faithfulness—entirely from Genesis.",
+    icon: "globe",
+    verses: [
+      ["Genesis 1:1", "In the beginning God created the heaven and the earth."],
+      ["Genesis 1:27", "So God created man in his own image."],
+      ["Genesis 12:2", "I will make of thee a great nation, and I will bless thee."],
+      ["Genesis 15:6", "And he believed in the Lord; and he counted it to him for righteousness."],
+      ["Genesis 22:14", "And Abraham called the name of that place Jehovahjireh."],
+      ["Genesis 28:15", "Behold, I am with thee, and will keep thee in all places whither thou goest."],
+      ["Genesis 50:20", "Ye thought evil against me; but God meant it unto good."]
+    ]
+  },
+  "book-isaiah": {
+    title: "Isaiah",
+    copy: "God’s holiness, comfort, salvation and the promised Messiah—entirely from Isaiah.",
+    icon: "sun",
+    verses: [
+      ["Isaiah 6:3", "Holy, holy, holy, is the Lord of hosts: the whole earth is full of his glory."],
+      ["Isaiah 7:14", "Behold, a virgin shall conceive, and bear a son, and shall call his name Immanuel."],
+      ["Isaiah 9:6", "For unto us a child is born, unto us a son is given."],
+      ["Isaiah 40:31", "They that wait upon the Lord shall renew their strength."],
+      ["Isaiah 41:10", "Fear thou not; for I am with thee: be not dismayed; for I am thy God."],
+      ["Isaiah 43:2", "When thou passest through the waters, I will be with thee."],
+      ["Isaiah 53:5", "He was wounded for our transgressions, he was bruised for our iniquities."],
+      ["Isaiah 55:8–9", "My thoughts are not your thoughts, neither are your ways my ways, saith the Lord."]
+    ]
+  },
+  "book-matthew": {
+    title: "Matthew",
+    copy: "The King, His kingdom and His teaching—entirely from Matthew.",
+    icon: "cross",
+    verses: [
+      ["Matthew 1:21", "Thou shalt call his name JESUS: for he shall save his people from their sins."],
+      ["Matthew 5:14", "Ye are the light of the world."],
+      ["Matthew 6:33", "Seek ye first the kingdom of God, and his righteousness."],
+      ["Matthew 7:7", "Ask, and it shall be given you; seek, and ye shall find."],
+      ["Matthew 11:28", "Come unto me, all ye that labour and are heavy laden, and I will give you rest."],
+      ["Matthew 16:16", "Thou art the Christ, the Son of the living God."],
+      ["Matthew 28:18", "All power is given unto me in heaven and in earth."],
+      ["Matthew 28:20", "Lo, I am with you alway, even unto the end of the world."]
+    ]
+  },
+  "book-luke": {
+    title: "Luke",
+    copy: "The compassion, salvation and humanity of Jesus—entirely from Luke.",
+    icon: "heart",
+    verses: [
+      ["Luke 1:37", "For with God nothing shall be impossible."],
+      ["Luke 2:11", "Unto you is born this day in the city of David a Saviour, which is Christ the Lord."],
+      ["Luke 4:18", "The Spirit of the Lord is upon me, because he hath anointed me to preach the gospel to the poor."],
+      ["Luke 6:31", "As ye would that men should do to you, do ye also to them likewise."],
+      ["Luke 9:23", "If any man will come after me, let him deny himself, and take up his cross daily, and follow me."],
+      ["Luke 15:7", "Joy shall be in heaven over one sinner that repenteth."],
+      ["Luke 18:27", "The things which are impossible with men are possible with God."],
+      ["Luke 19:10", "For the Son of man is come to seek and to save that which was lost."]
+    ]
+  },
+  "book-acts": {
+    title: "Acts",
+    copy: "The Holy Spirit, the early church and bold witness—entirely from Acts.",
+    icon: "flame",
+    verses: [
+      ["Acts 1:8", "Ye shall receive power, after that the Holy Ghost is come upon you: and ye shall be witnesses unto me."],
+      ["Acts 2:21", "Whosoever shall call on the name of the Lord shall be saved."],
+      ["Acts 2:38", "Repent, and be baptized every one of you in the name of Jesus Christ for the remission of sins."],
+      ["Acts 4:12", "Neither is there salvation in any other."],
+      ["Acts 4:31", "They were all filled with the Holy Ghost, and they spake the word of God with boldness."],
+      ["Acts 16:31", "Believe on the Lord Jesus Christ, and thou shalt be saved."],
+      ["Acts 17:28", "For in him we live, and move, and have our being."],
+      ["Acts 20:35", "It is more blessed to give than to receive."]
+    ]
+  },
+  "book-ephesians": {
+    title: "Ephesians",
+    copy: "Grace, identity, unity and spiritual strength—entirely from Ephesians.",
+    icon: "shield",
+    verses: [
+      ["Ephesians 1:3", "Who hath blessed us with all spiritual blessings in heavenly places in Christ."],
+      ["Ephesians 1:7", "In whom we have redemption through his blood, the forgiveness of sins."],
+      ["Ephesians 2:8–9", "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God."],
+      ["Ephesians 2:10", "For we are his workmanship, created in Christ Jesus unto good works."],
+      ["Ephesians 3:20", "Able to do exceeding abundantly above all that we ask or think."],
+      ["Ephesians 4:32", "Be ye kind one to another, tenderhearted, forgiving one another."],
+      ["Ephesians 6:10", "Be strong in the Lord, and in the power of his might."],
+      ["Ephesians 6:11", "Put on the whole armour of God."]
+    ]
+  },
+  "book-colossians": {
+    title: "Colossians",
+    copy: "The supremacy of Christ and life rooted in Him—entirely from Colossians.",
+    icon: "crown",
+    verses: [
+      ["Colossians 1:13–14", "Who hath delivered us from the power of darkness... In whom we have redemption through his blood."],
+      ["Colossians 1:16", "By him were all things created, that are in heaven, and that are in earth."],
+      ["Colossians 1:17", "He is before all things, and by him all things consist."],
+      ["Colossians 2:6–7", "As ye have therefore received Christ Jesus the Lord, so walk ye in him: Rooted and built up in him."],
+      ["Colossians 3:2", "Set your affection on things above, not on things on the earth."],
+      ["Colossians 3:12", "Put on therefore... bowels of mercies, kindness, humbleness of mind, meekness, longsuffering."],
+      ["Colossians 3:17", "Whatsoever ye do in word or deed, do all in the name of the Lord Jesus."],
+      ["Colossians 3:23", "Whatsoever ye do, do it heartily, as to the Lord, and not unto men."]
+    ]
+  },
+  "book-1-peter": {
+    title: "1 Peter",
+    copy: "Hope, holiness and steadfast faith through suffering—entirely from 1 Peter.",
+    icon: "anchor",
+    verses: [
+      ["1 Peter 1:3", "Hath begotten us again unto a lively hope by the resurrection of Jesus Christ from the dead."],
+      ["1 Peter 1:15–16", "Be ye holy; for I am holy."],
+      ["1 Peter 2:9", "Ye are a chosen generation, a royal priesthood, an holy nation."],
+      ["1 Peter 2:24", "Who his own self bare our sins in his own body on the tree."],
+      ["1 Peter 3:15", "Be ready always to give an answer to every man that asketh you a reason of the hope that is in you."],
+      ["1 Peter 4:8", "Above all things have fervent charity among yourselves."],
+      ["1 Peter 5:7", "Casting all your care upon him; for he careth for you."],
+      ["1 Peter 5:10", "The God of all grace... make you perfect, stablish, strengthen, settle you."]
+    ]
+  },
+  "person-abraham": {
+    title: "Abraham",
+    copy: "Faith, obedience and trusting God’s promise through Abraham’s life.",
+    icon: "star",
+    verses: [
+      ["Genesis 12:1–2", "Get thee out of thy country... and I will make of thee a great nation."],
+      ["Genesis 15:6", "And he believed in the Lord; and he counted it to him for righteousness."],
+      ["Genesis 17:1", "Walk before me, and be thou perfect."],
+      ["Genesis 22:8", "My son, God will provide himself a lamb for a burnt offering."],
+      ["Romans 4:20–21", "He staggered not at the promise of God through unbelief... being fully persuaded that, what he had promised, he was able also to perform."],
+      ["Hebrews 11:8", "By faith Abraham, when he was called to go out... obeyed."]
+    ]
+  },
+  "person-joseph": {
+    title: "Joseph",
+    copy: "Integrity, endurance, forgiveness and God’s purpose through Joseph’s life.",
+    icon: "steps",
+    verses: [
+      ["Genesis 39:2", "And the Lord was with Joseph, and he was a prosperous man."],
+      ["Genesis 39:9", "How then can I do this great wickedness, and sin against God?"],
+      ["Genesis 41:16", "It is not in me: God shall give Pharaoh an answer of peace."],
+      ["Genesis 45:5", "God did send me before you to preserve life."],
+      ["Genesis 50:20", "Ye thought evil against me; but God meant it unto good."],
+      ["Psalm 105:19", "Until the time that his word came: the word of the Lord tried him."]
+    ]
+  },
+  "person-moses": {
+    title: "Moses",
+    copy: "Calling, courage, leadership and dependence on God through Moses’ life.",
+    icon: "mountain",
+    verses: [
+      ["Exodus 3:12", "Certainly I will be with thee."],
+      ["Exodus 4:12", "Now therefore go, and I will be with thy mouth, and teach thee what thou shalt say."],
+      ["Exodus 14:14", "The Lord shall fight for you, and ye shall hold your peace."],
+      ["Exodus 33:14", "My presence shall go with thee, and I will give thee rest."],
+      ["Deuteronomy 31:8", "The Lord, he it is that doth go before thee; he will be with thee."],
+      ["Hebrews 11:27", "He endured, as seeing him who is invisible."]
+    ]
+  },
+  "person-joshua": {
+    title: "Joshua",
+    copy: "Courage, obedience and strength for stepping into God’s assignment.",
+    icon: "shield",
+    verses: [
+      ["Joshua 1:5", "As I was with Moses, so I will be with thee: I will not fail thee, nor forsake thee."],
+      ["Joshua 1:8", "This book of the law shall not depart out of thy mouth... then thou shalt make thy way prosperous."],
+      ["Joshua 1:9", "Be strong and of a good courage... for the Lord thy God is with thee whithersoever thou goest."],
+      ["Joshua 3:5", "Sanctify yourselves: for to morrow the Lord will do wonders among you."],
+      ["Joshua 23:14", "Not one thing hath failed of all the good things which the Lord your God spake concerning you."],
+      ["Joshua 24:15", "As for me and my house, we will serve the Lord."]
+    ]
+  },
+  "person-ruth": {
+    title: "Ruth",
+    copy: "Loyalty, courage and restoration through Ruth’s faithful choices.",
+    icon: "heart",
+    verses: [
+      ["Ruth 1:16", "Whither thou goest, I will go; and where thou lodgest, I will lodge."],
+      ["Ruth 2:12", "A full reward be given thee of the Lord God of Israel, under whose wings thou art come to trust."],
+      ["Ruth 2:20", "Blessed be he of the Lord, who hath not left off his kindness to the living and to the dead."],
+      ["Ruth 3:11", "All the city of my people doth know that thou art a virtuous woman."],
+      ["Ruth 4:14", "Blessed be the Lord, which hath not left thee this day without a kinsman."],
+      ["Matthew 1:5", "Boaz begat Obed of Ruth; and Obed begat Jesse."]
+    ]
+  },
+  "person-esther": {
+    title: "Esther",
+    copy: "Courage, wisdom and purpose for a defining moment through Esther’s story.",
+    icon: "crown",
+    verses: [
+      ["Esther 2:17", "The king loved Esther above all the women."],
+      ["Esther 4:14", "Who knoweth whether thou art come to the kingdom for such a time as this?"],
+      ["Esther 4:16", "I also and my maidens will fast likewise; and so will I go in unto the king."],
+      ["Esther 5:2", "She obtained favour in his sight."],
+      ["Esther 8:16", "The Jews had light, and gladness, and joy, and honour."],
+      ["Esther 9:22", "The month which was turned unto them from sorrow to joy."]
+    ]
+  },
+  "person-daniel": {
+    title: "Daniel",
+    copy: "Conviction, prayer and faithfulness under pressure through Daniel’s life.",
+    icon: "shield",
+    verses: [
+      ["Daniel 1:8", "Daniel purposed in his heart that he would not defile himself."],
+      ["Daniel 2:20", "Blessed be the name of God for ever and ever: for wisdom and might are his."],
+      ["Daniel 3:17–18", "Our God whom we serve is able to deliver us... But if not... we will not serve thy gods."],
+      ["Daniel 6:10", "He kneeled upon his knees three times a day, and prayed, and gave thanks before his God."],
+      ["Daniel 6:22", "My God hath sent his angel, and hath shut the lions' mouths."],
+      ["Daniel 9:9", "To the Lord our God belong mercies and forgivenesses."]
+    ]
+  },
+  "person-mary": {
+    title: "Mary",
+    copy: "Surrender, trust and worship through Mary’s response to God.",
+    icon: "heart",
+    verses: [
+      ["Luke 1:28", "Hail, thou that art highly favoured, the Lord is with thee."],
+      ["Luke 1:35", "The Holy Ghost shall come upon thee, and the power of the Highest shall overshadow thee."],
+      ["Luke 1:37", "For with God nothing shall be impossible."],
+      ["Luke 1:38", "Behold the handmaid of the Lord; be it unto me according to thy word."],
+      ["Luke 1:46–47", "My soul doth magnify the Lord, And my spirit hath rejoiced in God my Saviour."],
+      ["Luke 2:19", "Mary kept all these things, and pondered them in her heart."]
+    ]
+  },
+  "person-peter": {
+    title: "Peter",
+    copy: "Calling, failure, restoration and bold faith through Peter’s journey.",
+    icon: "anchor",
+    verses: [
+      ["Matthew 4:19", "Follow me, and I will make you fishers of men."],
+      ["Matthew 16:16", "Thou art the Christ, the Son of the living God."],
+      ["Luke 22:32", "I have prayed for thee, that thy faith fail not: and when thou art converted, strengthen thy brethren."],
+      ["John 21:17", "Lord, thou knowest all things; thou knowest that I love thee."],
+      ["Acts 4:13", "They marvelled; and they took knowledge of them, that they had been with Jesus."],
+      ["1 Peter 5:7", "Casting all your care upon him; for he careth for you."]
+    ]
+  },
+  "occasion-waiting": {
+    title: "Waiting",
+    copy: "Scripture for trusting God when the answer, direction or breakthrough has not come yet.",
+    icon: "clock",
+    verses: [
+      ["Psalm 27:14", "Wait on the Lord: be of good courage, and he shall strengthen thine heart."],
+      ["Psalm 37:7", "Rest in the Lord, and wait patiently for him."],
+      ["Psalm 130:5", "I wait for the Lord, my soul doth wait, and in his word do I hope."],
+      ["Isaiah 40:31", "They that wait upon the Lord shall renew their strength."],
+      ["Lamentations 3:25–26", "The Lord is good unto them that wait for him... It is good that a man should both hope and quietly wait for the salvation of the Lord."],
+      ["Habakkuk 2:3", "Though it tarry, wait for it; because it will surely come, it will not tarry."],
+      ["Romans 8:25", "If we hope for that we see not, then do we with patience wait for it."],
+      ["Galatians 6:9", "Let us not be weary in well doing: for in due season we shall reap, if we faint not."],
+      ["James 5:7", "Be patient therefore, brethren, unto the coming of the Lord."],
+      ["Hebrews 10:36", "Ye have need of patience, that, after ye have done the will of God, ye might receive the promise."]
     ]
   },
   "psalms-prayer": {
