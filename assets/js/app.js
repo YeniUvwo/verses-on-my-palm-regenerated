@@ -1,101 +1,26 @@
-const verses = {
-  peace:[
-    ['Philippians 4:6–7','Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God. And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus.'],
-    ['John 14:27','Peace I leave with you, my peace I give unto you: not as the world giveth, give I unto you. Let not your heart be troubled, neither let it be afraid.'],
-    ['Isaiah 26:3','Thou wilt keep him in perfect peace, whose mind is stayed on thee: because he trusteth in thee.']
-  ],
-  anxiety:[
-    ['1 Peter 5:7','Casting all your care upon him; for he careth for you.'],
-    ['Matthew 6:34','Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself.'],
-    ['Psalm 55:22','Cast thy burden upon the Lord, and he shall sustain thee: he shall never suffer the righteous to be moved.']
-  ],
-  fear:[
-    ['Isaiah 41:10','Fear thou not; for I am with thee: be not dismayed; for I am thy God.'],
-    ['Psalm 56:3','What time I am afraid, I will trust in thee.'],
-    ['2 Timothy 1:7','For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.']
-  ],
-  doubt:[
-    ['Mark 9:24','Lord, I believe; help thou mine unbelief.'],
-    ['James 1:5','If any of you lack wisdom, let him ask of God, that giveth to all men liberally.'],
-    ['Jude 1:22','And of some have compassion, making a difference.'],
-    ['John 20:29','Blessed are they that have not seen, and yet have believed.']
-  ],
-  heard:[
-    ['Psalm 34:17','The righteous cry, and the Lord heareth, and delivereth them out of all their troubles.'],
-    ['1 John 5:14','If we ask any thing according to his will, he heareth us.'],
-    ['Psalm 116:1–2','I love the Lord, because he hath heard my voice and my supplications. Because he hath inclined his ear unto me, therefore will I call upon him as long as I live.'],
-    ['Jeremiah 33:3','Call unto me, and I will answer thee, and shew thee great and mighty things, which thou knowest not.']
-  ],
-  lonely:[
-    ['Deuteronomy 31:8','The Lord, he it is that doth go before thee; he will be with thee, he will not fail thee.'],
-    ['Psalm 27:10','When my father and my mother forsake me, then the Lord will take me up.'],
-    ['Hebrews 13:5','I will never leave thee, nor forsake thee.']
-  ],
-  grief:[
-    ['Psalm 34:18','The Lord is nigh unto them that are of a broken heart.'],
-    ['Matthew 5:4','Blessed are they that mourn: for they shall be comforted.'],
-    ['Revelation 21:4','And God shall wipe away all tears from their eyes.']
-  ],
-  tired:[
-    ['Matthew 11:28','Come unto me, all ye that labour and are heavy laden, and I will give you rest.'],
-    ['Isaiah 40:31','They that wait upon the Lord shall renew their strength.'],
-    ['Psalm 23:2–3','He maketh me to lie down in green pastures: he leadeth me beside the still waters. He restoreth my soul.']
-  ],
-  guidance:[
-    ['Proverbs 3:5–6','Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.'],
-    ['Psalm 32:8','I will instruct thee and teach thee in the way which thou shalt go.'],
-    ['James 1:5','If any of you lack wisdom, let him ask of God.']
-  ],
-  forgiveness:[
-    ['1 John 1:9','If we confess our sins, he is faithful and just to forgive us our sins.'],
-    ['Psalm 103:12','As far as the east is from the west, so far hath he removed our transgressions from us.'],
-    ['Romans 8:1','There is therefore now no condemnation to them which are in Christ Jesus.']
-  ],
-  hope:[
-    ['Romans 15:13','Now the God of hope fill you with all joy and peace in believing.'],
-    ['Jeremiah 29:11','For I know the thoughts that I think toward you, saith the Lord, thoughts of peace, and not of evil.'],
-    ['Lamentations 3:22–23','It is of the Lord’s mercies that we are not consumed. They are new every morning.']
-  ],
-  strength:[
-    ['Philippians 4:13','I can do all things through Christ which strengtheneth me.'],
-    ['Psalm 46:1','God is our refuge and strength, a very present help in trouble.'],
-    ['Nehemiah 8:10','The joy of the Lord is your strength.']
-  ],
-  provision:[
-    ['Philippians 4:19','My God shall supply all your need according to his riches in glory by Christ Jesus.'],
-    ['Matthew 6:31–33','Seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.'],
-    ['Psalm 23:1','The Lord is my shepherd; I shall not want.']
-  ],
-  identity:[
-    ['2 Corinthians 5:17','If any man be in Christ, he is a new creature.'],
-    ['Ephesians 2:10','For we are his workmanship, created in Christ Jesus unto good works.'],
-    ['1 Peter 2:9','Ye are a chosen generation, a royal priesthood, an holy nation.']
-  ],
-  salvation:[
-    ['John 3:16','For God so loved the world, that he gave his only begotten Son.'],
-    ['Romans 10:9','If thou shalt confess with thy mouth the Lord Jesus, and shalt believe in thine heart that God hath raised him from the dead, thou shalt be saved.'],
-    ['Ephesians 2:8–9','For by grace are ye saved through faith; and that not of yourselves: it is the gift of God.']
-  ],
-  prayer:[
-    ['Matthew 6:9–10','Our Father which art in heaven, Hallowed be thy name. Thy kingdom come. Thy will be done.'],
-    ['Philippians 4:6','In every thing by prayer and supplication with thanksgiving let your requests be made known unto God.'],
-    ['Romans 8:26','The Spirit also helpeth our infirmities: for we know not what we should pray for as we ought.']
-  ],
-  wisdom:[
-    ['Proverbs 4:7','Wisdom is the principal thing; therefore get wisdom.'],
-    ['James 1:5','If any of you lack wisdom, let him ask of God.'],
-    ['Proverbs 16:3','Commit thy works unto the Lord, and thy thoughts shall be established.']
-  ],
-  love:[
-    ['1 Corinthians 13:4–5','Charity suffereth long, and is kind; charity envieth not; charity vaunteth not itself.'],
-    ['1 John 4:19','We love him, because he first loved us.'],
-    ['John 13:34','A new commandment I give unto you, That ye love one another.']
-  ],
-  gratitude:[
-    ['1 Thessalonians 5:18','In every thing give thanks: for this is the will of God in Christ Jesus concerning you.'],
-    ['Psalm 100:4','Enter into his gates with thanksgiving, and into his courts with praise.'],
-    ['Psalm 107:1','O give thanks unto the Lord, for he is good.']
-  ]
+
+
+
+const readingEncouragements = {
+  peace: 'You do not have to force peace. Bring your heart to God and let Him steady you.',
+  anxiety: 'You are not carrying this alone. God cares about every concern weighing on you.',
+  fear: 'Fear may be present, but God is nearer. You can take the next step with Him.',
+  doubt: 'Your questions do not push God away. Bring them honestly and let faith grow gently.',
+  heard: 'Your prayer has reached God. Even in silence, you have His full attention.',
+  lonely: 'You may feel alone, but you have not been abandoned. God is present with you now.',
+  grief: 'You do not have to rush your healing. God stays close to the brokenhearted.',
+  tired: 'You are allowed to rest. God does not measure your worth by how much you accomplish.',
+  guidance: 'You do not need the whole path today. Ask God to make the next step clear.',
+  forgiveness: 'Your failure is not greater than God’s mercy. Grace gives you somewhere new to begin.',
+  hope: 'This season is not the end of your story. God is still at work beyond what you see.',
+  strength: 'You do not have to feel strong to be carried by God. His strength meets you here.',
+  provision: 'God sees what you need. Keep moving faithfully without allowing fear to lead you.',
+  identity: 'You are more than your mistakes, opinions or comparisons. God calls you His own.',
+  salvation: 'You do not have to earn God’s welcome. Jesus has already made a way for you.',
+  prayer: 'God is not waiting for impressive words. Begin honestly, and speak from your heart.',
+  wisdom: 'You are allowed to pause before deciding. God gives wisdom to those who ask Him.',
+  love: 'God’s love can soften what hurt has hardened. Let His love begin its work in you.',
+  gratitude: 'There is still goodness worth noticing. Let one small thank-you become worship.'
 };
 
 const feelings = [
@@ -163,72 +88,38 @@ function verseId(ref){return ref.toLowerCase().replace(/[^a-z0-9]+/g,'-')}
 function verseCards(list){return `<div class="verse-list">${list.map(([ref,text])=>{const id=verseId(ref);return `<article class="verse-card"><p class="verse-text">“${esc(text)}”</p><span class="verse-ref">${esc(ref)} · KJV</span><div class="verse-actions"><button class="small-button ${saved.has(id)?'saved':''}" data-save="${id}" data-ref="${esc(ref)}" data-text="${esc(text)}">${saved.has(id)?'♥ Saved':'♡ Save'}</button><button class="small-button" data-copy="${esc(text+' — '+ref)}">Copy</button></div></article>`}).join('')}</div>`}
 function prayerCard(key){return `<section class="section-block"><div class="section-title-row"><div><span class="eyebrow">Pray</span><h2>A prayer for this moment</h2></div></div><div class="prayer-card"><p>${esc(prayers[key]||prayers.prayer)}</p><small>Take your time. You can change these words and make them your own.</small></div></section>`}
 
-function renderHome(){app.innerHTML=`<section class="hero"><span class="eyebrow">God's Word for where you are</span><h1>What do you need today?</h1><p>You do not need to know where to look. Begin with what is on your heart, and we will gently lead you into Scripture.</p></section><section class="home-grid"><button class="door" data-route="encouragement"><span class="door-arrow">↗</span><span class="door-icon">♡</span><div><h2>I need encouragement</h2><p>Find Scripture for what you are feeling.</p></div></button><button class="door" data-route="pray"><span class="door-arrow">↗</span><span class="door-icon">○</span><div><h2>I want to pray</h2><p>Begin even when you do not know what to say.</p></div></button><button class="door" data-route="browse"><span class="door-arrow">↗</span><span class="door-icon">▤</span><div><h2>Browse Scripture</h2><p>Explore by topic, promise, person and more.</p></div></button><button class="door" data-route="new"><span class="door-arrow">↗</span><span class="door-icon">✦</span><div><h2>I’m new here</h2><p>A simple place to begin with God and the Bible.</p></div></button><button class="door" data-route="search"><span class="door-arrow">↗</span><span class="door-icon">⌕</span><div><h2>Search</h2><p>Use plain words: “I cannot sleep” or “God feels far.”</p></div></button></section><section class="feature-strip"><button class="feature-card" data-route="topic" data-param="doubt"><strong>When you have doubts</strong><span>Your questions are not too much for God.</span></button><button class="feature-card" data-route="topic" data-param="heard"><strong>God hears you</strong><span>You do not need perfect words to be heard.</span></button></section>`}
+function renderHome(){app.innerHTML=`<section class="hero"><span class="eyebrow">God's Word for where you are</span><h1>What do you need today?</h1><p>You do not need to know where to look. Begin with what is on your heart, and we will gently lead you into Scripture.</p></section><section class="home-grid"><button class="door" data-route="encouragement"><span class="door-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="door-icon">♡</span><div><h2>I need encouragement</h2><p>Find Scripture for what you are feeling.</p></div></button><button class="door" data-route="pray"><span class="door-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="door-icon">○</span><div><h2>I want to pray</h2><p>Begin even when you do not know what to say.</p></div></button><button class="door" data-route="browse"><span class="door-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="door-icon">▤</span><div><h2>Browse Scripture</h2><p>Explore by topic, promise, person and more.</p></div></button><button class="door" data-route="new"><span class="door-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="door-icon">✦</span><div><h2>I’m new here</h2><p>A simple place to begin with God and the Bible.</p></div></button><button class="door" data-route="search"><span class="door-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="door-icon">⌕</span><div><h2>Search</h2><p>Use plain words: “I cannot sleep” or “God feels far.”</p></div></button></section><section class="feature-strip"><button class="feature-card" data-route="topic" data-param="doubt"><strong>When you have doubts</strong><span>Your questions are not too much for God.</span></button><button class="feature-card" data-route="topic" data-param="heard"><strong>God hears you</strong><span>You do not need perfect words to be heard.</span></button></section>`}
 function renderEncouragement(){app.innerHTML=pageHead('How are you feeling?','Choose the closest word. You do not have to explain everything.','home')+`<div class="choice-grid">${feelings.map(([a,b,c,d])=>choiceCard(a,c,d,'topic',b)).join('')}</div>`}
 function renderPray(){app.innerHTML=pageHead('Let’s pray','Prayer can be honest, short and unfinished. God is not waiting for perfect words.','home')+`<div class="choice-grid">${choiceCard("I don’t know what to pray",'Begin with a simple guided prayer.','○','topic','heard')}${choiceCard('Pray about something','Choose what is on your heart.','♡','topics')}${choiceCard('Pray through Scripture','Let a Bible verse shape your words.','▤','topic','prayer')}${choiceCard('When God feels silent','Bring doubt and waiting into the light.','?','topic','doubt')}${choiceCard('The Lord’s Prayer','Learn the pattern Jesus gave.','✦','reading','lords-prayer')}${choiceCard('Learn to pray','A gentle four-part guide.','↗','reading','learn-prayer')}</div>`}
 function renderBrowse(){app.innerHTML=pageHead('Browse Scripture','There is more here, but you will only see one clear choice at a time.','home')+`<div class="choice-grid">${browseGroups.map(([a,b,c,d])=>choiceCard(a,c,d,b)).join('')}</div>`}
 function renderTopics(){app.innerHTML=pageHead('Browse by topic','Choose one place to begin.','browse')+`<div class="choice-grid">${topics.map(([a,b])=>choiceCard(a,'Verses and a short prayer.','•','topic',b)).join('')}</div>`}
-function renderTopic() {
-    const key = getParam();
-
-    const title =
-        topics.find(item => item[1] === key)?.[0]
-        || feelings.find(item => item[1] === key)?.[0]
-        || key;
-
-    const intros = {
-        doubt:
-            'Doubt does not disqualify you from coming to God. Scripture makes room for honest questions and growing faith.',
-
-        heard:
-            'God hears the prayer you whisper, the prayer you cannot finish and the ache you do not know how to name.'
-    };
-
-    app.innerHTML =
-        pageHead(
-            title,
-            intros[key]
-                || 'Read slowly. One verse may be enough for today.',
-            previousRoute === 'home'
-                ? 'home'
-                : 'encouragement'
-        )
-        + prayerCard(key)
-        + `
-            <section>
-                <div class="section-title-row">
-                    <div>
-                        <span class="eyebrow">Scripture</span>
-                        <h2>Keep these words close</h2>
-                    </div>
-                </div>
-
-                ${verseCards(verses[key] || verses.hope)}
-            </section>
-
-            <section class="section-block">
-                <div class="reading-card">
-                    <h3>Hold onto this</h3>
-
-                    <p>
-                        ${
-                            key === 'doubt'
-                                ? 'Faith is not pretending you never have questions. It is choosing to bring those questions to God instead of hiding from Him.'
-                                : key === 'heard'
-                                    ? 'God’s answer may not arrive in the form or timing you expect, but His attention is not absent. You are invited to keep coming.'
-                                    : 'You do not have to absorb every verse at once. Choose one, repeat it slowly and carry it into the rest of your day.'
-                        }
-                    </p>
-                </div>
-            </section>
-        `;
+function renderTopic(){
+  const key=getParam();
+  const title=topics.find(x=>x[1]===key)?.[0]||feelings.find(x=>x[1]===key)?.[0]||key;
+  const intros={
+    doubt:'Doubt does not disqualify you from coming to God. There is room for honest questions and growing faith.',
+    heard:'God hears the prayer you whisper, the prayer you cannot finish and the ache you cannot name.'
+  };
+  const backRoute=previousRoute==='home'?'home':previousRoute==='topics'?'topics':previousRoute==='browse'?'browse':'encouragement';
+  app.innerHTML=pageHead(title,intros[key]||'Pause here and receive what your heart needs today.',backRoute)+`
+    <section class="section-block">
+      <div class="reading-card">
+        <span class="eyebrow">For your heart today</span>
+        <p>${esc(readingEncouragements[key]||'God is with you here. Take one quiet step toward Him today.')}</p>
+      </div>
+    </section>
+    ${prayerCard(key)}
+    <section class="section-block">
+      <div class="section-title-row"><div><span class="eyebrow">Scripture</span><h2>Keep these words close</h2></div></div>
+      ${verseCards(verses[key]||verses.hope)}
+    </section>`;
 }
 function renderNew(){app.innerHTML=pageHead('I’m new here','No pressure. No assumed knowledge. Begin with the question that matters most to you.','home')+`<div class="choice-grid">${newHere.map(([a,b,c])=>choiceCard(a,b,'✦','reading',a)).join('')}</div><section class="section-block"><div class="reading-card"><span class="eyebrow">A simple first step</span><h2>Meet Jesus in the Gospel of John</h2><p>Read one chapter at a time. Before you begin, pray: “God, help me see who Jesus is.” You do not need to understand everything immediately.</p></div></section>`}
 function renderReading(){const key=getParam();if(key==='lords-prayer'){app.innerHTML=pageHead('The Lord’s Prayer','A simple pattern Jesus gave His disciples.','pray')+`<div class="reading-card"><h2>Our Father</h2><ol><li><strong>Begin with who God is.</strong> “Our Father which art in heaven, Hallowed be thy name.”</li><li><strong>Welcome His will.</strong> “Thy kingdom come. Thy will be done.”</li><li><strong>Ask for today’s needs.</strong> “Give us this day our daily bread.”</li><li><strong>Receive and give forgiveness.</strong> “Forgive us our debts, as we forgive our debtors.”</li><li><strong>Ask for help against temptation.</strong> “Lead us not into temptation, but deliver us from evil.”</li></ol></div>${prayerCard('prayer')}`;return}if(key==='learn-prayer'){app.innerHTML=pageHead('Learn to pray','Use four simple movements. You can spend one sentence on each.','pray')+`<div class="reading-card"><h2>Adoration. Confession. Thanksgiving. Supplication.</h2><ol><li><strong>Adoration:</strong> Tell God what is true about Him.</li><li><strong>Confession:</strong> Speak honestly about where you have fallen short.</li><li><strong>Thanksgiving:</strong> Name something you are grateful for.</li><li><strong>Supplication:</strong> Ask for what you and others need.</li></ol><p>Prayer does not need to sound impressive. Honesty is a better beginning than eloquence.</p></div>`;return}const item=newHere.find(x=>x[0]===key);app.innerHTML=pageHead(item?.[0]||'Start here',item?.[1]||'Take one gentle step at a time.','new')+`${prayerCard(item?.[2]||'prayer')}${verseCards(verses[item?.[2]||'salvation'])}`}
 function renderGeneric(title,items,back='browse'){app.innerHTML=pageHead(title,'A curated starting point—not an overwhelming catalogue.',back)+`<div class="choice-grid">${items.map(([a,b,c='•'])=>choiceCard(a,b,c,'topic',inferKey(a))).join('')}</div>`}
 function inferKey(a){const s=a.toLowerCase();const match=topics.find(([t])=>s.includes(t.toLowerCase()));if(match)return match[1];if(s.includes('jesus'))return 'salvation';if(s.includes('prayer'))return 'prayer';if(s.includes('david'))return 'hope';if(s.includes('hospital'))return 'strength';if(s.includes('travel'))return 'guidance';if(s.includes('wedding'))return 'love';if(s.includes('business')||s.includes('exam')||s.includes('proverb'))return 'wisdom';return 'hope'}
 function renderSearch(){app.innerHTML=pageHead('Search','Type a feeling, need, Bible topic or a plain-language sentence.','home')+`<div class="search-wrap"><input id="searchInput" class="search-box" type="search" placeholder="Try “I feel afraid” or “Does God hear me?”" autocomplete="off"><p class="search-help">Search works on this device. Nothing you type is sent anywhere.</p><div id="results"></div></div>`;document.querySelector('#searchInput').addEventListener('input',e=>showResults(e.target.value));}
-function showResults(q){const box=document.querySelector('#results');q=q.trim().toLowerCase();if(!q){box.innerHTML='';return}const aliases={scared:'fear',afraid:'fear',worried:'anxiety',anxious:'anxiety','cannot sleep':'peace','can\'t sleep':'peace',listen:'heard',hear:'heard',silent:'doubt',question:'doubt',unbelief:'doubt',alone:'lonely',sad:'grief',money:'provision',business:'wisdom',work:'wisdom',lost:'guidance',shame:'forgiveness'};let keys=Object.keys(verses).filter(k=>k.includes(q)||topics.some(([t,key])=>key===k&&t.toLowerCase().includes(q)));Object.entries(aliases).forEach(([term,key])=>{if(q.includes(term)&&!keys.includes(key))keys.push(key)});if(!keys.length){box.innerHTML='<div class="empty-state">No exact match yet. Try a simpler word such as fear, peace, doubt, work, grief or prayer.</div>';return}box.innerHTML=keys.slice(0,6).map(k=>`<section class="result-group"><h3>${esc(topics.find(x=>x[1]===k)?.[0]||k)}</h3>${verseCards(verses[k].slice(0,2))}<button class="small-button" data-route="topic" data-param="${k}">Open full section →</button></section>`).join('');}
+function showResults(q){const box=document.querySelector('#results');q=q.trim().toLowerCase();if(!q){box.innerHTML='';return}const aliases={scared:'fear',afraid:'fear',worried:'anxiety',anxious:'anxiety','cannot sleep':'peace','can\'t sleep':'peace',listen:'heard',hear:'heard','need help':'heard','i need help':'heard','help me':'heard','please help me':'heard','i need prayer':'prayer','i need god':'salvation','i do not know what to do':'guidance',"i don't know what to do":'guidance',silent:'doubt',question:'doubt',unbelief:'doubt',alone:'lonely',sad:'grief',money:'provision',business:'wisdom',work:'wisdom',lost:'guidance',shame:'forgiveness'};let keys=Object.keys(verses).filter(k=>k.includes(q)||topics.some(([t,key])=>key===k&&t.toLowerCase().includes(q)));Object.entries(aliases).forEach(([term,key])=>{if(q.includes(term)&&!keys.includes(key))keys.push(key)});if(!keys.length){box.innerHTML='<div class="empty-state">I could not find an exact match, but you do not have to leave empty-handed. Start with God Hears You, prayer, peace or guidance.</div>';return}box.innerHTML=keys.slice(0,6).map(k=>`<section class="result-group"><h3>${esc(topics.find(x=>x[1]===k)?.[0]||k)}</h3>${verseCards(verses[k].slice(0,2))}<button class="small-button" data-route="topic" data-param="${k}">Open full section →</button></section>`).join('');}
 function renderSaved(){const stored=JSON.parse(localStorage.getItem('vomp-saved-data')||'{}');const list=Object.entries(stored).map(([,v])=>[v.ref,v.text]);app.innerHTML=pageHead('Saved','Your saved verses remain on this device.','home')+(list.length?verseCards(list):'<div class="empty-state">You have not saved a verse yet. Tap ♡ Save beneath any Scripture to keep it here.</div>')}
 function renderSettings(){app.innerHTML=pageHead('Reading settings','Make the experience comfortable for your eyes and attention.','home')+`<div class="settings-list"><div class="setting-row"><div><strong>Appearance</strong><br><small>Light or dark reading mode</small></div><button id="themeToggle">${document.body.classList.contains('dark')?'Use light':'Use dark'}</button></div><div class="setting-row"><div><strong>Text size</strong><br><small>Adjust Scripture and body text</small></div><select id="fontSize"><option value="16">Smaller</option><option value="17">Default</option><option value="19">Larger</option><option value="21">Largest</option></select></div><div class="setting-row"><div><strong>Saved content</strong><br><small>Stored only in this browser</small></div><button id="clearSaved">Clear saved</button></div></div>`;document.querySelector('#fontSize').value=localStorage.getItem('vomp-font')||'17';document.querySelector('#themeToggle').onclick=()=>{document.body.classList.toggle('dark');localStorage.setItem('vomp-theme',document.body.classList.contains('dark')?'dark':'light');renderSettings()};document.querySelector('#fontSize').onchange=e=>{document.documentElement.style.setProperty('--font-size',e.target.value+'px');localStorage.setItem('vomp-font',e.target.value)};document.querySelector('#clearSaved').onclick=()=>{saved.clear();localStorage.removeItem('vomp-saved');localStorage.removeItem('vomp-saved-data');toast('Saved verses cleared')};}
 
