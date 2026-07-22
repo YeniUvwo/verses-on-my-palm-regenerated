@@ -190,3 +190,277 @@ const verses = {
     ["Psalm 136:1", "O give thanks unto the Lord; for he is good: for his mercy endureth for ever."]
   ]
 };
+
+const scriptureCollections = {
+  "book-john": {
+    title: "John",
+    copy: "Meet Jesus through the signs, words and claims that reveal His power and supremacy.",
+    icon: "cross",
+    verses: [
+      ["John 1:1–3", "In the beginning was the Word, and the Word was with God, and the Word was God. All things were made by him; and without him was not any thing made that was made."],
+      ["John 1:14", "And the Word was made flesh, and dwelt among us, and we beheld his glory."],
+      ["John 3:16", "For God so loved the world, that he gave his only begotten Son."],
+      ["John 5:21", "For as the Father raiseth up the dead, and quickeneth them; even so the Son quickeneth whom he will."],
+      ["John 6:35", "And Jesus said unto them, I am the bread of life: he that cometh to me shall never hunger."],
+      ["John 8:12", "I am the light of the world: he that followeth me shall not walk in darkness, but shall have the light of life."],
+      ["John 10:11", "I am the good shepherd: the good shepherd giveth his life for the sheep."],
+      ["John 10:30", "I and my Father are one."],
+      ["John 11:25", "I am the resurrection, and the life: he that believeth in me, though he were dead, yet shall he live."],
+      ["John 14:6", "I am the way, the truth, and the life: no man cometh unto the Father, but by me."],
+      ["John 14:9", "He that hath seen me hath seen the Father."],
+      ["John 17:5", "And now, O Father, glorify thou me with thine own self with the glory which I had with thee before the world was."],
+      ["John 20:28", "And Thomas answered and said unto him, My Lord and my God."],
+      ["John 20:31", "These are written, that ye might believe that Jesus is the Christ, the Son of God; and that believing ye might have life through his name."]
+    ]
+  },
+  "book-psalms": {
+    title: "Psalms",
+    copy: "Prayers and songs for worship, sorrow, trust, repentance and praise.",
+    icon: "music",
+    verses: [
+      ["Psalm 3:3", "But thou, O Lord, art a shield for me; my glory, and the lifter up of mine head."],
+      ["Psalm 16:11", "Thou wilt shew me the path of life: in thy presence is fulness of joy."],
+      ["Psalm 23:1", "The Lord is my shepherd; I shall not want."],
+      ["Psalm 27:1", "The Lord is my light and my salvation; whom shall I fear?"],
+      ["Psalm 34:18", "The Lord is nigh unto them that are of a broken heart."],
+      ["Psalm 46:1", "God is our refuge and strength, a very present help in trouble."],
+      ["Psalm 51:10", "Create in me a clean heart, O God; and renew a right spirit within me."],
+      ["Psalm 63:1", "O God, thou art my God; early will I seek thee: my soul thirsteth for thee."],
+      ["Psalm 91:1–2", "He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty."],
+      ["Psalm 103:1", "Bless the Lord, O my soul: and all that is within me, bless his holy name."],
+      ["Psalm 119:105", "Thy word is a lamp unto my feet, and a light unto my path."],
+      ["Psalm 121:1–2", "I will lift up mine eyes unto the hills, from whence cometh my help. My help cometh from the Lord."],
+      ["Psalm 139:23–24", "Search me, O God, and know my heart: try me, and know my thoughts."],
+      ["Psalm 150:6", "Let every thing that hath breath praise the Lord. Praise ye the Lord."]
+    ]
+  },
+  "book-proverbs": {
+    title: "Proverbs",
+    copy: "Wisdom from Proverbs for character, speech, work, relationships and daily decisions.",
+    icon: "lamp",
+    verses: [
+      ["Proverbs 1:7", "The fear of the Lord is the beginning of knowledge."],
+      ["Proverbs 3:5–6", "Trust in the Lord with all thine heart; and lean not unto thine own understanding."],
+      ["Proverbs 4:23", "Keep thy heart with all diligence; for out of it are the issues of life."],
+      ["Proverbs 9:10", "The fear of the Lord is the beginning of wisdom."],
+      ["Proverbs 10:12", "Hatred stirreth up strifes: but love covereth all sins."],
+      ["Proverbs 12:18", "The tongue of the wise is health."],
+      ["Proverbs 13:20", "He that walketh with wise men shall be wise."],
+      ["Proverbs 15:1", "A soft answer turneth away wrath."],
+      ["Proverbs 16:3", "Commit thy works unto the Lord, and thy thoughts shall be established."],
+      ["Proverbs 16:9", "A man's heart deviseth his way: but the Lord directeth his steps."],
+      ["Proverbs 18:10", "The name of the Lord is a strong tower: the righteous runneth into it, and is safe."],
+      ["Proverbs 22:6", "Train up a child in the way he should go."],
+      ["Proverbs 27:17", "Iron sharpeneth iron; so a man sharpeneth the countenance of his friend."],
+      ["Proverbs 31:30", "Favour is deceitful, and beauty is vain: but a woman that feareth the Lord, she shall be praised."]
+    ]
+  },
+  "book-romans": {
+    title: "Romans",
+    copy: "The gospel of grace, justification by faith and new life in Christ—entirely from Romans.",
+    icon: "scroll",
+    verses: [
+      ["Romans 1:16", "For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation."],
+      ["Romans 3:23–24", "For all have sinned, and come short of the glory of God; Being justified freely by his grace."],
+      ["Romans 5:1", "Therefore being justified by faith, we have peace with God through our Lord Jesus Christ."],
+      ["Romans 5:8", "But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us."],
+      ["Romans 6:23", "For the wages of sin is death; but the gift of God is eternal life through Jesus Christ our Lord."],
+      ["Romans 8:1", "There is therefore now no condemnation to them which are in Christ Jesus."],
+      ["Romans 8:18", "The sufferings of this present time are not worthy to be compared with the glory which shall be revealed in us."],
+      ["Romans 8:28", "And we know that all things work together for good to them that love God."],
+      ["Romans 8:37", "In all these things we are more than conquerors through him that loved us."],
+      ["Romans 10:9", "If thou shalt confess with thy mouth the Lord Jesus, and shalt believe in thine heart, thou shalt be saved."],
+      ["Romans 12:1–2", "Present your bodies a living sacrifice, holy, acceptable unto God... be ye transformed by the renewing of your mind."],
+      ["Romans 12:21", "Be not overcome of evil, but overcome evil with good."],
+      ["Romans 15:13", "Now the God of hope fill you with all joy and peace in believing."]
+    ]
+  },
+  "book-philippians": {
+    title: "Philippians",
+    copy: "Joy, humility, contentment and peace in Christ—entirely from Philippians.",
+    icon: "joy",
+    verses: [
+      ["Philippians 1:6", "He which hath begun a good work in you will perform it until the day of Jesus Christ."],
+      ["Philippians 1:21", "For to me to live is Christ, and to die is gain."],
+      ["Philippians 2:3", "In lowliness of mind let each esteem other better than themselves."],
+      ["Philippians 2:5", "Let this mind be in you, which was also in Christ Jesus."],
+      ["Philippians 2:9–11", "God also hath highly exalted him, and given him a name which is above every name."],
+      ["Philippians 3:10", "That I may know him, and the power of his resurrection."],
+      ["Philippians 3:13–14", "Forgetting those things which are behind... I press toward the mark."],
+      ["Philippians 4:4", "Rejoice in the Lord alway: and again I say, Rejoice."],
+      ["Philippians 4:6–7", "Be careful for nothing... and the peace of God, which passeth all understanding, shall keep your hearts and minds."],
+      ["Philippians 4:8", "Whatsoever things are true... honest... just... pure... lovely... think on these things."],
+      ["Philippians 4:11", "I have learned, in whatsoever state I am, therewith to be content."],
+      ["Philippians 4:13", "I can do all things through Christ which strengtheneth me."],
+      ["Philippians 4:19", "But my God shall supply all your need according to his riches in glory by Christ Jesus."]
+    ]
+  },
+  "book-james": {
+    title: "James",
+    copy: "Practical faith, endurance, wisdom, speech and obedient living—entirely from James.",
+    icon: "steps",
+    verses: [
+      ["James 1:2–3", "Count it all joy when ye fall into divers temptations; Knowing this, that the trying of your faith worketh patience."],
+      ["James 1:5", "If any of you lack wisdom, let him ask of God."],
+      ["James 1:12", "Blessed is the man that endureth temptation."],
+      ["James 1:19", "Let every man be swift to hear, slow to speak, slow to wrath."],
+      ["James 1:22", "But be ye doers of the word, and not hearers only."],
+      ["James 1:27", "Pure religion and undefiled before God... is this, To visit the fatherless and widows in their affliction."],
+      ["James 2:17", "Faith, if it hath not works, is dead, being alone."],
+      ["James 3:5", "The tongue is a little member, and boasteth great things."],
+      ["James 3:17", "The wisdom that is from above is first pure, then peaceable, gentle, and easy to be intreated."],
+      ["James 4:7", "Submit yourselves therefore to God. Resist the devil, and he will flee from you."],
+      ["James 4:8", "Draw nigh to God, and he will draw nigh to you."],
+      ["James 4:10", "Humble yourselves in the sight of the Lord, and he shall lift you up."],
+      ["James 5:16", "The effectual fervent prayer of a righteous man availeth much."]
+    ]
+  },
+  "psalms-prayer": {
+    title: "Psalms for Prayer",
+    copy: "Only Psalms—chosen to help you pray through fear, sorrow, repentance, trust and praise.",
+    icon: "prayer",
+    verses: [
+      ["Psalm 5:3", "My voice shalt thou hear in the morning, O Lord; in the morning will I direct my prayer unto thee."],
+      ["Psalm 18:2", "The Lord is my rock, and my fortress, and my deliverer."],
+      ["Psalm 23:1–4", "The Lord is my shepherd; I shall not want... Yea, though I walk through the valley of the shadow of death, I will fear no evil."],
+      ["Psalm 27:7–8", "Hear, O Lord, when I cry with my voice... Thy face, Lord, will I seek."],
+      ["Psalm 34:4", "I sought the Lord, and he heard me, and delivered me from all my fears."],
+      ["Psalm 42:11", "Why art thou cast down, O my soul? hope thou in God."],
+      ["Psalm 46:10", "Be still, and know that I am God."],
+      ["Psalm 51:10–12", "Create in me a clean heart, O God; and renew a right spirit within me."],
+      ["Psalm 61:1–2", "Hear my cry, O God; attend unto my prayer... lead me to the rock that is higher than I."],
+      ["Psalm 63:1", "O God, thou art my God; early will I seek thee."],
+      ["Psalm 86:11", "Teach me thy way, O Lord; I will walk in thy truth: unite my heart to fear thy name."],
+      ["Psalm 91:1–2", "He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty."],
+      ["Psalm 103:1–2", "Bless the Lord, O my soul, and forget not all his benefits."],
+      ["Psalm 121:1–2", "My help cometh from the Lord, which made heaven and earth."],
+      ["Psalm 130:1–2", "Out of the depths have I cried unto thee, O Lord. Lord, hear my voice."],
+      ["Psalm 139:23–24", "Search me, O God, and know my heart... and lead me in the way everlasting."],
+      ["Psalm 143:8", "Cause me to hear thy lovingkindness in the morning; for in thee do I trust."]
+    ]
+  },
+  "essential-verses": {
+    title: "Essential Memory Verses",
+    copy: "Foundational verses every believer can carry through daily life.",
+    icon: "star",
+    verses: [
+      ["Genesis 1:1", "In the beginning God created the heaven and the earth."],
+      ["Psalm 23:1", "The Lord is my shepherd; I shall not want."],
+      ["Psalm 119:105", "Thy word is a lamp unto my feet, and a light unto my path."],
+      ["Proverbs 3:5–6", "Trust in the Lord with all thine heart; and lean not unto thine own understanding."],
+      ["Isaiah 41:10", "Fear thou not; for I am with thee: be not dismayed; for I am thy God."],
+      ["Matthew 6:33", "Seek ye first the kingdom of God, and his righteousness."],
+      ["John 3:16", "For God so loved the world, that he gave his only begotten Son."],
+      ["John 14:6", "I am the way, the truth, and the life."],
+      ["Romans 3:23", "For all have sinned, and come short of the glory of God."],
+      ["Romans 6:23", "The gift of God is eternal life through Jesus Christ our Lord."],
+      ["Romans 8:28", "All things work together for good to them that love God."],
+      ["Romans 10:9", "If thou shalt confess with thy mouth the Lord Jesus... thou shalt be saved."],
+      ["1 Corinthians 10:13", "God is faithful, who will not suffer you to be tempted above that ye are able."],
+      ["2 Corinthians 5:17", "If any man be in Christ, he is a new creature."],
+      ["Galatians 5:22–23", "The fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith, meekness, temperance."],
+      ["Ephesians 2:8–9", "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God."],
+      ["Philippians 4:6–7", "Be careful for nothing... and the peace of God... shall keep your hearts and minds."],
+      ["Philippians 4:13", "I can do all things through Christ which strengtheneth me."],
+      ["Philippians 4:19", "My God shall supply all your need according to his riches in glory by Christ Jesus."],
+      ["2 Timothy 1:7", "God hath not given us the spirit of fear; but of power, and of love, and of a sound mind."],
+      ["Hebrews 11:1", "Faith is the substance of things hoped for, the evidence of things not seen."],
+      ["James 1:5", "If any of you lack wisdom, let him ask of God."],
+      ["1 Peter 5:7", "Casting all your care upon him; for he careth for you."],
+      ["1 John 1:9", "If we confess our sins, he is faithful and just to forgive us our sins."]
+    ]
+  },
+  "difficult-days": {
+    title: "Promises for Difficult Days",
+    copy: "Promises of God’s presence, strength, help, peace and faithful care.",
+    icon: "shield",
+    verses: [
+      ["Deuteronomy 31:8", "The Lord, he it is that doth go before thee; he will be with thee, he will not fail thee."],
+      ["Psalm 34:17–18", "The righteous cry, and the Lord heareth... The Lord is nigh unto them that are of a broken heart."],
+      ["Psalm 46:1", "God is our refuge and strength, a very present help in trouble."],
+      ["Psalm 55:22", "Cast thy burden upon the Lord, and he shall sustain thee."],
+      ["Isaiah 40:31", "They that wait upon the Lord shall renew their strength."],
+      ["Isaiah 41:10", "Fear thou not; for I am with thee."],
+      ["Isaiah 43:2", "When thou passest through the waters, I will be with thee."],
+      ["Matthew 11:28", "Come unto me, all ye that labour and are heavy laden, and I will give you rest."],
+      ["John 14:27", "Peace I leave with you, my peace I give unto you."],
+      ["Romans 8:28", "All things work together for good to them that love God."],
+      ["Romans 8:38–39", "Nothing shall be able to separate us from the love of God, which is in Christ Jesus our Lord."],
+      ["2 Corinthians 12:9", "My grace is sufficient for thee: for my strength is made perfect in weakness."],
+      ["Philippians 4:19", "My God shall supply all your need according to his riches in glory by Christ Jesus."],
+      ["Hebrews 13:5", "I will never leave thee, nor forsake thee."],
+      ["1 Peter 5:7", "Casting all your care upon him; for he careth for you."]
+    ]
+  },
+  "children-verses": {
+    title: "Verses for Children",
+    copy: "Short, clear verses about God’s love, kindness, obedience, courage and trust.",
+    icon: "heart",
+    verses: [
+      ["Psalm 56:3", "What time I am afraid, I will trust in thee."],
+      ["Psalm 119:105", "Thy word is a lamp unto my feet, and a light unto my path."],
+      ["Proverbs 3:5", "Trust in the Lord with all thine heart."],
+      ["Proverbs 15:1", "A soft answer turneth away wrath."],
+      ["Matthew 5:16", "Let your light so shine before men."],
+      ["Matthew 19:14", "Suffer little children, and forbid them not, to come unto me."],
+      ["Luke 6:31", "As ye would that men should do to you, do ye also to them likewise."],
+      ["John 3:16", "For God so loved the world, that he gave his only begotten Son."],
+      ["Ephesians 4:32", "Be ye kind one to another, tenderhearted, forgiving one another."],
+      ["Ephesians 6:1", "Children, obey your parents in the Lord: for this is right."],
+      ["Philippians 4:4", "Rejoice in the Lord alway."],
+      ["Philippians 4:13", "I can do all things through Christ which strengtheneth me."],
+      ["Colossians 3:20", "Children, obey your parents in all things: for this is well pleasing unto the Lord."],
+      ["1 Thessalonians 5:17", "Pray without ceasing."],
+      ["1 John 4:19", "We love him, because he first loved us."]
+    ]
+  },
+  "words-of-jesus": {
+    title: "Words of Jesus",
+    copy: "The direct teachings, invitations and promises of Jesus from the Gospels.",
+    icon: "cross",
+    verses: [
+      ["Matthew 5:14", "Ye are the light of the world."],
+      ["Matthew 6:33", "Seek ye first the kingdom of God, and his righteousness."],
+      ["Matthew 7:7", "Ask, and it shall be given you; seek, and ye shall find."],
+      ["Matthew 11:28", "Come unto me, all ye that labour and are heavy laden, and I will give you rest."],
+      ["Matthew 22:37–39", "Thou shalt love the Lord thy God with all thy heart... Thou shalt love thy neighbour as thyself."],
+      ["Matthew 28:19–20", "Go ye therefore, and teach all nations... and, lo, I am with you alway."],
+      ["Mark 8:34", "Whosoever will come after me, let him deny himself, and take up his cross, and follow me."],
+      ["Luke 6:31", "As ye would that men should do to you, do ye also to them likewise."],
+      ["John 6:35", "I am the bread of life."],
+      ["John 8:12", "I am the light of the world."],
+      ["John 10:11", "I am the good shepherd."],
+      ["John 11:25", "I am the resurrection, and the life."],
+      ["John 13:34", "That ye love one another; as I have loved you."],
+      ["John 14:6", "I am the way, the truth, and the life."],
+      ["John 14:27", "Peace I leave with you, my peace I give unto you."],
+      ["John 15:5", "I am the vine, ye are the branches."],
+      ["John 16:33", "In the world ye shall have tribulation: but be of good cheer; I have overcome the world."]
+    ]
+  },
+  "proverbs-daily": {
+    title: "Proverbs for Daily Living",
+    copy: "Only Proverbs—practical wisdom for thoughts, speech, work, money and relationships.",
+    icon: "lamp",
+    verses: [
+      ["Proverbs 3:5–6", "Trust in the Lord with all thine heart... and he shall direct thy paths."],
+      ["Proverbs 4:23", "Keep thy heart with all diligence; for out of it are the issues of life."],
+      ["Proverbs 10:4", "He becometh poor that dealeth with a slack hand: but the hand of the diligent maketh rich."],
+      ["Proverbs 10:12", "Hatred stirreth up strifes: but love covereth all sins."],
+      ["Proverbs 11:25", "The liberal soul shall be made fat: and he that watereth shall be watered also himself."],
+      ["Proverbs 12:18", "The tongue of the wise is health."],
+      ["Proverbs 13:20", "He that walketh with wise men shall be wise."],
+      ["Proverbs 14:29", "He that is slow to wrath is of great understanding."],
+      ["Proverbs 15:1", "A soft answer turneth away wrath."],
+      ["Proverbs 15:22", "In the multitude of counsellors they are established."],
+      ["Proverbs 16:3", "Commit thy works unto the Lord, and thy thoughts shall be established."],
+      ["Proverbs 16:9", "A man's heart deviseth his way: but the Lord directeth his steps."],
+      ["Proverbs 17:22", "A merry heart doeth good like a medicine."],
+      ["Proverbs 18:21", "Death and life are in the power of the tongue."],
+      ["Proverbs 19:11", "The discretion of a man deferreth his anger."],
+      ["Proverbs 22:1", "A good name is rather to be chosen than great riches."],
+      ["Proverbs 27:17", "Iron sharpeneth iron; so a man sharpeneth the countenance of his friend."]
+    ]
+  }
+};
+

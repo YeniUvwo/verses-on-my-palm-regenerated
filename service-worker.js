@@ -1,4 +1,4 @@
-const CACHE='vomp-v5';
+const CACHE='vomp-v6';
 const ASSETS=['./','./index.html','./assets/css/style.css','./assets/data/verses.js','./assets/js/app.js','./manifest.webmanifest','./assets/icons/icon.svg'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS))));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))));
