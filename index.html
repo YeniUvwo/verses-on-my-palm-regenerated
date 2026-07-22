@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5efe4">
+  <meta name="description" content="A calm, simple way to find Scripture and prayer for where you are.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Verses on My Palm">
+  <meta property="og:description" content="God's Word for where you are.">
+  <meta property="og:type" content="website">
+  <title>Verses on My Palm</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+  <div class="site-shell">
+    <header class="topbar">
+      <button class="brand" type="button" data-route="home" aria-label="Go home">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span><strong>Verses</strong><small>on My Palm</small></span>
+      </button>
+      <div class="topbar-actions">
+        <button class="icon-button" type="button" data-route="saved" aria-label="Saved items">♡</button>
+        <button class="icon-button" type="button" data-route="settings" aria-label="Settings">Aa</button>
+      </div>
+    </header>
+
+    <main id="app" tabindex="-1"></main>
+
+    <nav class="mobile-nav" aria-label="Primary">
+      <button type="button" data-route="home"><span>⌂</span>Home</button>
+      <button type="button" data-route="search"><span>⌕</span>Search</button>
+      <button type="button" data-route="saved"><span>♡</span>Saved</button>
+    </nav>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

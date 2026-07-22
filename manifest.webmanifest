@@ -1,0 +1,10 @@
+{
+  "name":"Verses on My Palm",
+  "short_name":"Verses",
+  "description":"God's Word for where you are.",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#f5efe4",
+  "theme_color":"#34513b",
+  "icons":[{"src":"assets/icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
